@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TODO: Add more colors and define gradients for styling standardization */
+:root {
+  --background: #ffffff;
+
+  --primary: #378394;
+  --primary-dark: #296e7a;
+  --primary-light: #1de4af;
+
+  --accent: #e0b006;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
