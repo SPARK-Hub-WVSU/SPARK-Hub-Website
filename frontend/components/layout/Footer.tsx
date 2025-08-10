@@ -38,8 +38,8 @@ export default function Footer() {
               <Link href=""> About Us </Link>
             </div>
               <div className="flex flex-col gap-4">
-                <Link href="" > Section </Link>
-                <Link href="" > Section </Link>
+                <Link href="" className="transform transition-all duration-300 ease-in-out  hover:glow-2xl hover:glow-white" > Section </Link>
+                <Link href="" className="transform transition-all duration-300 ease-in-out  hover:glow-2xl hover:glow-white"> Section </Link>
               </div>
           </div>
 
@@ -48,8 +48,8 @@ export default function Footer() {
               <Link href=""> Contacts </Link>
             </div>
               <div className="flex flex-col gap-4">
-                <Link href="" > Facebook </Link>
-                <Link href="" > Email </Link>
+                <Link href="" className="transform transition-all duration-300 ease-in-out  hover:glow-2xl hover:glow-white" > Facebook </Link>
+                <Link href="" className="transform transition-all duration-300 ease-in-out  hover:glow-2xl hover:glow-white"> Email </Link>
               </div>
           </div>
 

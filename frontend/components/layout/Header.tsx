@@ -1,4 +1,7 @@
 import Link from "next/link";
+import {
+  ArrowRightIcon
+} from "@heroicons/react/24/outline";
 
 export default function Header() {
   return (
@@ -9,7 +12,7 @@ export default function Header() {
             <Link href="" className="font-semibold text-3xl flex items-center gap-8">
               <img className="absolute" src="/vectors/nav_logo.svg" alt = "SPARK Hub Logo"/>
               <img id="Logo_Glow" className="relative blur-sm opacity-60" src="/vectors/nav_logo.svg" alt = "SPARK Hub Logo"/> 
-              SPARK HUB
+              <h1> SPARK HUB </h1>
             </Link>
           </div>
 
@@ -22,9 +25,7 @@ export default function Header() {
                   Contact Us
                 </div>
                 <div>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="4" stroke="currentColor" className="size-6 items-center">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                  </svg>
+                  <ArrowRightIcon strokeWidth="4" className="mx-1 h-6 stroke-accent"/>
                 </div>
               </button>
             </Link>
