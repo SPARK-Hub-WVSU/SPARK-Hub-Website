@@ -1,30 +1,38 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 export default function Header() {
   return (
     <header className="bg-primary-dark">
       <nav className="text-white text-2xl w-full h-auto flex flex-row items-center justify-between py-3 px-36">
+        {/* Logo */}
         <div id="Home" className="mb-2">
           <Link
             href="/"
-            className="font-semibold text-3xl flex items-center gap-8"
+            className="font-semibold text-3xl flex items-center gap-8 relative"
           >
-            <img
+            <Image
+              src="/vectors/nav_logo.svg"
+              alt="SPARK Hub Logo"
+              width={48}
+              height={48}
+              priority
               className="absolute"
-              src="/vectors/nav_logo.svg"
-              alt="SPARK Hub Logo"
             />
-            <img
+            <Image
               id="Logo_Glow"
-              className="relative blur-sm opacity-60"
               src="/vectors/nav_logo.svg"
-              alt="SPARK Hub Logo"
+              alt="SPARK Hub Logo Glow"
+              width={48}
+              height={48}
+              className="relative blur-sm opacity-60"
             />
-            <h1> SPARK HUB </h1>
+            <h1>SPARK HUB</h1>
           </Link>
         </div>
 
+        {/* Navigation Links */}
         <div
           id="Content"
           className="flex flex-row gap-10 justify-center items-center"
@@ -37,7 +45,7 @@ export default function Header() {
           </Link>
           <Link
             href="/officers"
-            className="transform transition-all duration-300 ease-in-out  hover:glow-2xl hover:glow-white"
+            className="transform transition-all duration-300 ease-in-out hover:glow-2xl hover:glow-white"
           >
             Team
           </Link>
@@ -50,7 +58,7 @@ export default function Header() {
               <div>Contact Us</div>
               <div>
                 <ArrowRightIcon
-                  strokeWidth="4"
+                  strokeWidth={4}
                   className="mx-1 h-6 stroke-accent"
                 />
               </div>
