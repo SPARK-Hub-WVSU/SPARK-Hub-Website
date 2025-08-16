@@ -4,8 +4,8 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 export default function Header() {
   return (
-    <header className="bg-primary-dark">
-      <nav className="text-white text-2xl w-full h-auto flex flex-row items-center justify-between py-3 px-36">
+    <header className="">
+      <nav className="text-white text-2xl w-full h-auto flex flex-row items-center justify-between py-5 px-36">
         {/* Logo */}
         <div id="Home" className="mb-2">
           <Link
