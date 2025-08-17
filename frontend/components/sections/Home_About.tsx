@@ -4,11 +4,11 @@ import Link from "next/link";
 export default function Home_About() {
   return (
     <section id="Home_About"
-             className="bg-[url('/bg/home_about_bg.png')] bg-cover bg-center bg-no-repeat max-w-full pb-56 pt-96">
+             className="bg-[url('/bg/home_about_bg.png')] bg-cover bg-center bg-no-repeat max-w-full pb-48 pt-[2rem]">
 
         {/* About Spark*/}
         <div id="About_SPARK"
-             className="flex flex-col p-36">
+             className="flex flex-col p-36 mt-20">
             
             <div id="Upper_Part"
                  className="flex flex-row justify-between w-full">
@@ -54,9 +54,9 @@ export default function Home_About() {
                 <div id="Image_Card"
                     className="bg-[url('/bg/home_image_card_gradient.png')] bg-cover bg-center bg-no-repeat rounded-[2rem] w-fit -mt-32">
                     <Image
-                        width={800}
-                        height={800}
-                        src="/img/home_img_card.png"
+                        width={750}
+                        height={750}
+                        src="/images/home_img_card.png"
                         alt="home image card"
                         className="p-7 border-2 border-white border-opacity-5 rounded-[2rem] backdrop-blur-[90px]"
                     />
@@ -64,7 +64,7 @@ export default function Home_About() {
 
                 {/* Right Card */}
                 <div id="Right_Card"
-                    className="absolute flex bg-[url('/bg/home_right_card_gradient.png')] bg-cover bg-center bg-no-repeat w-fit left-96 ml-[21.5rem] mt-44 ">     
+                    className="absolute flex bg-[url('/bg/home_right_card_gradient.png')] bg-cover bg-center bg-no-repeat w-fit left-96 ml-[19rem] mt-44 ">     
                     <div id="Right_Card_Info"
                          className="py-8 px-6 bg-white bg-opacity-5 rounded-[2rem] backdrop-blur-[90px] border-2 border-white border-opacity-5 transform transition-all duration-300 ease-in-out hover:scale-105">
                         <h1 className="text-white text-3xl">
@@ -159,16 +159,10 @@ export default function Home_About() {
                                     </p>                                    
                                 </div>
                             </div>
-                          
                         </div>
                     </div>
-
                 </div>
             </div>
-
-
-
-
         </div>
     </section>
   );
