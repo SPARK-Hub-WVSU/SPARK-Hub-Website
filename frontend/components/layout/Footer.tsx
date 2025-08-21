@@ -8,7 +8,6 @@ export default function Footer() {
       <nav className="text-white text-xl w-auto h-auto flex flex-col lg:flex-row justify-between py-8 lg:py-20 px-4 lg:px-36">
       {/* Logo */}
       <div id="Logo" className="flex flex-col items-center lg:items-start gap-4 lg:gap-6 mb-8 lg:mb-0">
-        {/* Logo + Text */}
         <div className="flex flex-col lg:flex-row items-center lg:items-center gap-3 lg:gap-6">
           <Image
             width={40}

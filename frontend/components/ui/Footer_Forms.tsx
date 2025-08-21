@@ -28,11 +28,9 @@ export default function Forms() {
                 text-white focus:outline-none"/>
             </div>
         </div>  
-
         <button className="transform transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-105 font-semibold text-lg text-white bg-gradient-to-r from-cyan-600 to-teal-400 mt-4 w-full rounded-xl py-3">
             Submit
         </button>
-
         </div>
     </form>
   );
