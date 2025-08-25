@@ -78,7 +78,7 @@ export default function Hero() {
               width={290}
               src="/vectors/people.svg"
               alt="people"
-              className="md:opacity-65 opacity-0 md:mr-[33rem] md:-mt-5 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
+              className="md:opacity-65 opacity-0 md:-ml-7 md:-mt-5 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
             />
 
             <Image
