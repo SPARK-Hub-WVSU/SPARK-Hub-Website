@@ -22,7 +22,7 @@ export default function Home() {
       >
         <div
           id="Our_Mission"
-          className="bg-white md:rounded-[5rem] rounded-[1rem] border border-black md:flex md:justify-between md:px-24 px-5 py-10 bg-opacity-20 backdrop-blur-[10px] md:mb-24 md:max-w-full max-w-[420px] min-w-[360px] justify-center"
+          className="bg-white md:rounded-[5rem] rounded-[1rem] border border-black border-opacity-30 md:flex md:justify-between md:px-24 px-5 py-10 bg-opacity-20 backdrop-blur-[10px] md:mb-24 md:max-w-[1175px]  max-w-[290px] min-w-[280px] w-full justify-center"
         >
           {/* Our Mission */}
           <div
@@ -33,7 +33,7 @@ export default function Home() {
             <h1 className="md:text-8xl text-[2rem] font-semibold md:-mt-0 -mt-3">
               Mission
             </h1>
-            <hr className="md:border-t-4 border-t-2 border-slate-900 md:w-40 w-20"></hr>
+            <hr className="md:border-t-4 border-slate-900 md:w-40 w-20"></hr>
 
             {/* SPARK Commitment */}
             <div
@@ -121,25 +121,25 @@ export default function Home() {
       {/* Vision */}
       <section
         id="Vision"
-        className="bg-[url('/bg/vision_bg.png')] bg-cover bg-center bg-no-repeat py-44 px-36 text-slate-900"
+        className="md:bg-[url('/bg/vision_bg.png')] bg-[url('/bg/mobile_vision_bg.png')] bg-cover bg-center bg-no-repeat md:py-96 py-32 md:px-36 px-9 text-slate-900 flex flex-col items-center justify-center"
       >
         <div
           id="Our_Vision"
-          className="bg-white rounded-[5rem] border border-black flex justify-between px-24 py-20 bg-opacity-20 backdrop-blur-[10px] mb-32"
+          className="bg-white md:rounded-[5rem] rounded-[1rem] border border-black border-opacity-30 md:flex md:justify-between md:px-24 px-5 py-10 bg-opacity-20 backdrop-blur-[10px] md:mb-24 md:max-w-[1175px] max-w-[280px] w-full justify-center"
         >
           <div
             id="Content"
-            className="flex flex-col text-center py-40 mx-auto gap-5"
+            className="flex flex-col text-center md:py-40 py-10 mx-auto md:gap-5 w-full"
           >
-            <div id="Title" className="flex gap-5 justify-center">
-              <h1 className="text-8xl">Our</h1>
-              <h1 className="text-8xl font-semibold">Vision</h1>
+            <div id="Title" className="flex md:gap-5 gap-3 justify-center">
+              <h1 className="md:text-8xl text-[2rem]">Our</h1>
+              <h1 className="md:text-8xl text-[2rem] font-semibold">Vision</h1>
             </div>
 
-            <hr className="border-t-4 border-slate-900 w-40 ml-60"></hr>
+            <hr className="md:border-t-4 border-slate-900 md:w-40 w-10 ml-[45%]"></hr>
 
             <div id="Caption" className="mx-auto">
-              <p className="mt-8 w-[34rem] text-2xl">
+              <p className="md:mt-8 mt-5 md:w-[34rem] w-52 md:text-2xl text-[12px]">
                 <strong> SPARK HUB </strong>
                 envisions leading the Innovation Center for Youth in Western
                 Visayas
