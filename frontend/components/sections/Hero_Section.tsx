@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Hero */}
       <div
         id="Title"
-        className="flex flex-col items-center md:px-36 px-9 md:-mt-60 md:max-w-full max-w-[360px]"
+        className="flex flex-col items-center md:px-36 px-9 md:-mt-60 mt-11 md:max-w-[92rem] max-w-[300px]"
       >
         {/* Upper-Part */}
         <div
@@ -21,7 +21,7 @@ export default function Hero() {
             width={290}
             src="/vectors/wifi.svg"
             alt="wifi"
-            className="opacity-65 mt-32 md:mr-20 mr-9 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
+            className="opacity-65 md:mt-32 mt-10 md:mr-20 mr-12 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
           />
 
           <div
@@ -32,7 +32,7 @@ export default function Hero() {
               src="/vectors/hero_logo.svg"
               alt="SPARK HUB Logo"
               fill
-              className="md:mt-24 mt-16 transition-all duration-300 ease-in-out hover:glow-md hover:glow-amber-300"
+              className="md:mt-24 mt-3 transition-all duration-300 ease-in-out hover:glow-md hover:glow-amber-300"
             />
           </div>
 
@@ -41,14 +41,14 @@ export default function Hero() {
             width={400}
             src="/vectors/computer.svg"
             alt="computer"
-            className="opacity-65 md:mr-60 mr-[3.5rem] m-4 md:mt-0 mt-20 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
+            className="opacity-65 md:mr-60 md:-mt-0 -mt-6 mr-0 m-4 md:scale-100 scale-150 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
           />
         </div>
 
         {/* Spark Typography */}
         <div
           id="SPARK_Typorgraphy"
-          className="font-bold md:text-9xl text-5xl flex gap-5 -mt-5 md:mb-16 mb-3"
+          className="font-bold md:text-9xl text-5xl flex gap-5 md:-mt-5 -mt-2 md:mb-16 mb-3"
         >
           <h1 className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
             SPARK
@@ -86,7 +86,7 @@ export default function Hero() {
               width={290}
               src="/vectors/mobile_people.svg"
               alt="wifi"
-              className="md:opacity-0 opacity-65 -mt-[6.3rem] md:-ml-[3.8rem] -ml-[3.2rem] scale-50 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
+              className="md:opacity-0 opacity-65 -mt-[5rem] md:-ml-[3.8rem] -ml-[4rem] scale-50 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
             />
           </div>
 
