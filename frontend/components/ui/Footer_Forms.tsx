@@ -1,18 +1,20 @@
+import React from "react";
+
 export default function Forms() {
     return (
-        <div className="relative mb-24 ">
-            <div className="absolute left-[430px] top-[3px] w-20 h-14 bg-yellow-400 rounded-full" />
-            <div className="absolute left-[174px] top-[286px] w-20 h-20 bg-yellow-400 rounded-full" />
-            <div className="absolute left-[490px] top-[314px] w-20 h-20 bg-teal-400 rounded-full" />
-            <div className="absolute left-[124px] top-[36px] w-20 h-20 bg-teal-400 rounded-full" />
-            <div className="absolute left-[8px] top-[98px] w-14 h-28 bg-amber-300 opacity-60 rounded-full" />
+        <div className="relative mb-24 overflow-hidden">
+            <div className="absolute left-[26.875rem] top-[0.1875rem] w-20 h-14 bg-yellow-400 rounded-full" />
+            <div className="absolute left-[10.875rem] top-[17.875rem] w-20 h-20 bg-yellow-400 rounded-full" />
+            <div className="absolute left-[26.45rem] top-[18.625rem] w-20 h-20 bg-teal-400 rounded-full" />
+            <div className="absolute left-[7.45rem] top-[2.25rem] w-20 h-20 bg-teal-400 rounded-full" />
+            <div className="absolute left-[0.5rem] top-[6.125rem] w-14 h-28 bg-amber-300 opacity-60 rounded-full" />
 
-            <form className="bg-zinc-500/5 backdrop-blur-[60px] rounded-[2rem] border border-white/80">
-                <div id="Blur" className="px-4 py-6 border border-white border-opacity-80 rounded-[2rem]">
+            <form className="bg-zinc-500/5 backdrop-blur-3xl rounded-2xl border border-white/80">
+                <section id="Blur" className="px-4 py-6 border border-white border-opacity-80 rounded-2xl">
                     <div id="Prompt">
                         <p className="text-gray-200 text-3xl pb-2 font-medium"> Send a Message!</p>
                         <p className="text-white text-xl text-opacity-80 pb-10 font-medium"> Fill out the fields below</p>
-                    </div>  
+                    </div>
 
                     <div id="Fill_Up" className="flex flex-row gap-5">
                         <div id="Name_Email" className="flex flex-col gap-6">
@@ -39,8 +41,7 @@ export default function Forms() {
                     <button className="transform transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-105 font-semibold text-xl text-white bg-gradient-to-r from-cyan-600 to-teal-400 mt-4 w-full rounded-xl py-4 ">
                         Submit
                     </button>
-
-                </div>
+                </section>
             </form>
         </div>
     );
