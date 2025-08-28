@@ -18,11 +18,11 @@ export default function Home() {
       {/* Mission */}
       <section
         id="Mission"
-        className="md:bg-[url('/bg/mission_bg.png')] bg-[url('/bg/mobile_mission_bg.png')] bg-cover bg-center bg-no-repeat md:py-96 py-32 md:px-36 px-9 text-slate-900 flex flex-col items-center justify-center"
+        className="lg:bg-[url('/bg/mission_bg.png')] bg-[url('/bg/mobile_mission_bg.png')] bg-cover bg-center bg-no-repeat md:py-96 py-32 lg:px-36 md:px-16 px-9 text-slate-900 flex flex-col items-center justify-center"
       >
         <div
           id="Our_Mission"
-          className="bg-white md:rounded-[5rem] rounded-[1rem] border border-black border-opacity-30 md:flex md:justify-between md:px-24 px-5 py-10 bg-opacity-20 backdrop-blur-[10px] md:mb-24 md:max-w-[1175px]  max-w-[290px] min-w-[280px] w-full justify-center"
+          className="bg-white md:rounded-[5rem] rounded-[1rem] border border-black border-opacity-30 xl:flex xl:justify-between md:px-24 px-5 py-10 bg-opacity-20 backdrop-blur-[10px] md:mb-24 md:max-w-[1175px] max-w-[290px] min-w-[280px] w-full justify-center"
         >
           {/* Our Mission */}
           <div
@@ -59,7 +59,7 @@ export default function Home() {
           {/* SPARK Mission */}
           <div
             id="SPARK_Mission"
-            className="flex flex-col gap-6 w-fit md:ml-20 ml-10 md:text-sm text-[10px] md:mt-0 mt-9"
+            className="flex flex-col gap-6 w-fit md:ml-20 ml-10 md:text-sm text-[10px] :mt-16 mt-9"
           >
             <div
               id="Transforming"
@@ -121,7 +121,7 @@ export default function Home() {
       {/* Vision */}
       <section
         id="Vision"
-        className="md:bg-[url('/bg/vision_bg.png')] bg-[url('/bg/mobile_vision_bg.png')] bg-cover bg-center bg-no-repeat md:py-96 py-32 md:px-36 px-9 text-slate-900 flex flex-col items-center justify-center"
+        className="lg:bg-[url('/bg/vision_bg.png')] bg-[url('/bg/mobile_vision_bg.png')] bg-cover bg-center bg-no-repeat md:py-96 py-32 lg:px-36 md:px-16 px-9 text-slate-900 flex flex-col items-center justify-center"
       >
         <div
           id="Our_Vision"
@@ -139,7 +139,7 @@ export default function Home() {
             <hr className="md:border-t-4 border-slate-900 md:w-40 w-10 ml-[45%]"></hr>
 
             <div id="Caption" className="mx-auto">
-              <p className="md:mt-8 mt-5 md:w-[34rem] w-52 md:text-2xl text-[12px]">
+              <p className="md:mt-8 mt-5 lg:w-[34rem] md:w-fit w-52 md:text-2xl text-[12px]">
                 <strong> SPARK HUB </strong>
                 envisions leading the Innovation Center for Youth in Western
                 Visayas
