@@ -10,7 +10,16 @@
   --primary-dark: #296e7a;
   --primary-light: #1de4af;
 
+  --accent-metallic:#022A34 ;
   --accent: #FFC700;
+}
+
+@font-face {
+  font-family: 'Sarina';
+  src: url('/fonts/Sarina.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 html,
