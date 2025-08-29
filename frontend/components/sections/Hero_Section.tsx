@@ -4,12 +4,12 @@ export default function Hero() {
   return (
     <section
       id="Hero_Section"
-      className="lg:bg-[url('/bg/hero_bg.png')] bg-[url('/bg/mobile_hero_bg.png')] bg-cover bg-center bg-no-repeat md:max-w-full min-h-screen lg:-mt-40 -mt-40 md:pt-96 pt-36 flex flex-col items-center justify-center"
+      className="bg-[#022A34] lg:bg-[url('/bg/hero_bg.png')] bg-[url('/bg/mobile_hero_bg.png')] bg-cover bg-center bg-no-repeat md:max-w-full min-h-screen lg:-mt-40 -mt-40 md:pt-96 pt-36 flex flex-col items-center justify-center"
     >
       {/* Hero */}
       <div
         id="Title"
-        className="flex flex-col items-center lg:px-36 md:px-20 px-9 md:-mt-56 mt-11 lg:max-w-[92rem] md:max-w-[45rem] max-w-[18.75rem]"
+        className="flex flex-col items-center lg:px-36 md:px-20 sm:px-16 px-9 md:-mt-56 mt-11 lg:max-w-[92rem] md:max-w-[45rem] sm:max-w-[38rem] max-w-[18.75rem]"
       >
         {/* Upper-Part */}
         <div
@@ -21,18 +21,18 @@ export default function Hero() {
             width={290}
             src="/vectors/wifi.svg"
             alt="wifi"
-            className="opacity-65 lg:mt-32 md:mt-36 mt-10 lg:mr-56 md:mr-44 mr-12 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
+            className="opacity-65 lg:mt-32 md:mt-36 mt-10 lg:mr-56 md:mr-44 sm:mr-3 mr-12 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
           />
 
           <div
             id="Logo"
-            className="relative lg:w-[7.5rem] md:w-[5.625rem] w-[3.5rem] lg:h-[9.375rem] md:h-[7.5rem] h-[4.5rem] "
+            className="relative lg:w-[7.5rem] md:w-[5.625rem] sm:w-[5rem] w-[3.5rem] lg:h-[9.375rem] md:h-[7.5rem] sm:h-[6rem] h-[4.5rem] "
           >
             <Image
               src="/vectors/hero_logo.svg"
               alt="SPARK HUB Logo"
               fill
-              className="lg:mt-24 md:mt-12 mt-3 transition-all duration-300 ease-in-out hover:glow-md hover:glow-amber-300"
+              className="md:mt-24 sm:mt-12 mt-3 transition-all duration-300 ease-in-out hover:glow-md hover:glow-amber-300"
             />
           </div>
 
@@ -41,14 +41,14 @@ export default function Hero() {
             width={400}
             src="/vectors/computer.svg"
             alt="computer"
-            className="opacity-65 lg:mr-[1.8rem] md:mr-24 lg:mt-0 md:mt-4 -mt-6 mr-0 m-4 lg:scale-150 md:scale-110 scale-150 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
+            className="opacity-65 lg:mr-[1.8rem] md:mr-10 sm:mr-5 mr-0 lg:mt-0 md:mt-16 -mt-6 m-4 lg:scale-150 md:scale-[140%] scale-150 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
           />
         </div>
 
         {/* Spark Typography */}
         <div
           id="SPARK_Typorgraphy"
-          className="font-bold lg:text-9xl md:text-8xl text-5xl flex gap-5 md:-mt-5 -mt-2 lg:mb-16 md:mb-8 mb-3"
+          className="font-bold lg:text-9xl md:text-8xl sm:text-7xl text-5xl flex gap-5 md:-mt-5 -mt-2 lg:mb-16 md:mb-8 mb-3"
         >
           <h1 className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
             SPARK
@@ -60,7 +60,7 @@ export default function Hero() {
 
         {/* Tag Line */}
         <div id="Tag Line">
-          <div className="text-white lg:text-3xl md:text-lg text-[0.75rem] flex flex-row md:gap-4 gap-2">
+          <div className="text-white lg:text-4xl sm:text-lg text-[0.75rem] flex flex-row md:gap-4 gap-2">
             <h1 className="font-bold">CREATE</h1> —
             <h1 className="font-bold">COLLABORATE</h1> —
             <h1 className="font-bold">EMPOWER</h1>
@@ -68,14 +68,14 @@ export default function Hero() {
         </div>
 
         {/* Lower-Part */}
-        <div id="Lower Part" className="grid grid-cols-3 max-w-2xl">
+        <div id="Lower Part" className="grid grid-cols-3 max-w-5xl">
           <div>
             <Image
               height={290}
               width={290}
               src="/vectors/people.svg"
               alt="people"
-              className="md:opacity-65 opacity-0 lg:-ml-48 md:-ml-[6.2rem] lg:-mt-5 md:-mt-4 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
+              className="xl:opacity-65 opacity-0 xl:-ml-32 lg:-ml-44 md:-ml-[5rem] lg:-mt-5 md:-mt-4 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
             />
 
             <Image
@@ -83,7 +83,7 @@ export default function Hero() {
               width={290}
               src="/vectors/mobile_people.svg"
               alt="wifi"
-              className="md:opacity-0 opacity-65 -mt-[5rem] md:-ml-[4rem] -ml-[4rem] scale-50 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
+              className="xl:opacity-0 opacity-65 lg:-mt-[14.5rem] md:-mt-[10.8rem] sm:-mt-[10.3rem] -mt-[5rem] lg:-ml-[10.3rem] md:-ml-[3.3rem] sm:-ml-[3.5rem] -ml-[4.1rem] scale-50 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
             />
           </div>
 
