@@ -22,14 +22,16 @@ export default function Home_About() {
             <div>
               <div
                 id="SPARK_Typorgraphy"
-                className="font-bold sm:text-6xl text-3xl flex md:gap-5 gap-2"
+                className="font-bold sm:text-6xl text-3xl flex"
               >
-                <h1 className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
+              <h1>
+                <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
                   SPARK
-                </h1>
-                <h1 className="bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
+                </span> 
+                <span className="bg-gradient-to-r from-white to-slate-400 bg-clip-text lg:ml-[1.5rem] sm:ml-[1.25rem] ml-[0.5rem] text-transparent">
                   HUB
-                </h1>
+                </span>
+              </h1>
               </div>
               <hr className="sm:border-t-4 border-t-2 border-yellow-500 md:w-full sm:w-[21rem] w-[11rem] sm:mt-3 mt-0"></hr>
             </div>
@@ -61,12 +63,12 @@ export default function Home_About() {
                 id="Right_Card_Info"
                 className="md:p-5 px-3 py-2 bg-white bg-opacity-5 md:rounded-[2rem] rounded-[1rem] backdrop-blur-[90px] md:border-2 border-[1.75px] border-white border-opacity-5 transform transition-all duration-300 ease-in-out hover:scale-105"
               >
-                <h1 className="text-white md:text-3xl text-sm">
+                <h2 className="text-white md:text-3xl text-sm">
                   Our Commitment
-                </h1>
-                <h2 className="text-white md:text-lg text-[10px] md:mb-10 mb-4">
-                  We care about:
                 </h2>
+                <p className="text-white md:text-lg text-[10px] md:mb-10 mb-4">
+                  We care about:
+                </p>
 
                 <div
                   id="Commitment"
@@ -84,9 +86,9 @@ export default function Home_About() {
                       className="relative w-fit md:scale-100 scale-75 drop-shadow-[-10px_10px_18px_#000000] transition-all duration-300 ease-in-out hover:glow-lg hover:glow-amber-300"
                     />
                     <div id="Collab_Title" className="flex flex-col md:gap-1">
-                      <h1 className="md:text-xl text-sm text-accent">
+                      <p className="md:text-xl text-sm text-accent">
                         Collaboration
-                      </h1>
+                      </p>
                       <p className="text-white md:text-md text-[12px] font-light">
                         with people
                       </p>
@@ -106,9 +108,9 @@ export default function Home_About() {
                                         transition-all duration-300 ease-in-out hover:glow-lg hover:glow-amber-300"
                     />
                     <div id="Innov_Title" className="flex flex-col md:gap-1">
-                      <h1 className="md:text-xl text-sm text-accent">
+                      <p className="md:text-xl text-sm text-accent">
                         Innovate
-                      </h1>
+                      </p>
                       <p className="text-white md:text-md text-[12px] font-light">
                         for the future
                       </p>
@@ -127,9 +129,9 @@ export default function Home_About() {
                       className="relative md:scale-100 scale-75 w-fit drop-shadow-[-10px_10px_18px_#000000] transition-all duration-300 ease-in-out hover:glow-lg hover:glow-amber-300"
                     />
                     <div id="Collab_Title" className="flex flex-col md:gap-1">
-                      <h1 className="md:text-xl text-sm text-accent">
+                      <p className="md:text-xl text-sm text-accent">
                         Research
-                      </h1>
+                      </p>
                       <p className="text-white md:text-md text-[12px] font-light">
                         with a purpose
                       </p>
