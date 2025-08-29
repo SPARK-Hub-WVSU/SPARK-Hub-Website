@@ -29,9 +29,13 @@ export default function Home() {
             id="Title"
             className="flex flex-col md:gap-5 gap-3 md:mt-56 mt-0"
           >
-            <h1 className="md:text-8xl text-[2rem]">Our</h1>
-            <h1 className="md:text-8xl text-[2rem] font-semibold md:-mt-0 -mt-3">
-              Mission
+            <h1
+              className="md:text-8xl text-[2rem]">
+              Our
+              <span
+                className="font-semibold md:-mt-0 -mt-3">
+                  <br/> Mission
+              </span>
             </h1>
             <hr className="md:border-t-4 border-slate-900 md:w-40 w-32"></hr>
 
@@ -57,11 +61,11 @@ export default function Home() {
           </div>
 
           {/* SPARK Mission */}
-          <div
+          <ul
             id="SPARK_Mission"
             className="flex flex-col gap-6 w-fit md:ml-16 ml-10 md:text-sm text-[12px] :mt-16 mt-9"
           >
-            <div
+            <li
               id="Transforming"
               className="flex flex-row items-center md:gap-5 gap-2"
             >
@@ -77,9 +81,9 @@ export default function Home() {
                 <strong>Transforming ideas </strong>
                 into reality by creating projects.
               </p>
-            </div>
+            </li>
 
-            <div
+            <li
               id="Nurturing"
               className="flex flex-row items-center md:gap-5 gap-2"
             >
@@ -95,9 +99,9 @@ export default function Home() {
                 <strong>Nurturing an ecosystem </strong>
                 that drives global comeptence and innovation.
               </p>
-            </div>
+            </li>
 
-            <div
+            <li
               id="Fostering"
               className="flex flex-row items-center md:gap-5 gap-2"
             >
@@ -113,8 +117,8 @@ export default function Home() {
                 <strong>Fostering tech and business skills </strong>
                 through disciplinary training.
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -132,8 +136,14 @@ export default function Home() {
             className="flex flex-col text-center md:py-40 py-10 mx-auto md:gap-5 w-full"
           >
             <div id="Title" className="flex md:gap-5 gap-3 justify-center">
-              <h1 className="md:text-8xl text-[2rem]">Our</h1>
-              <h1 className="md:text-8xl text-[2rem] font-semibold">Vision</h1>
+              <h1
+                className="md:text-8xl text-[2rem]">
+                Our
+                <span
+                  className="font-semibold md:-mt-0 -mt-3 md:ml-[1.5rem] ml-[0.75rem]">
+                    Vision
+                </span>
+              </h1>
             </div>
 
             <hr className="md:border-t-4 border-t-2 border-slate-900 md:w-40 w-12 lg:ml-[45%] md:ml-[43%] ml-[47%]"></hr>
