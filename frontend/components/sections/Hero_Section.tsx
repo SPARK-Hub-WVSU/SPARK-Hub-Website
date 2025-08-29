@@ -50,20 +50,31 @@ export default function Hero() {
           id="SPARK_Typorgraphy"
           className="font-bold lg:text-9xl md:text-8xl sm:text-7xl text-5xl flex gap-5 md:-mt-5 -mt-2 lg:mb-16 md:mb-8 mb-3"
         >
-          <h1 className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
-            SPARK
-          </h1>
-          <h1 className="bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
-            HUB
+          <h1>
+            <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
+              SPARK
+            </span> 
+            <span className="bg-gradient-to-r from-white to-slate-400 bg-clip-text lg:ml-[1.5rem] sm:ml-[1.25rem] ml-[1rem] text-transparent">
+              HUB
+            </span>
           </h1>
         </div>
 
         {/* Tag Line */}
         <div id="Tag Line">
-          <div className="text-white lg:text-4xl sm:text-lg text-[0.75rem] flex flex-row md:gap-4 gap-2">
-            <h1 className="font-bold">CREATE</h1> —
-            <h1 className="font-bold">COLLABORATE</h1> —
-            <h1 className="font-bold">EMPOWER</h1>
+          <div className="text-white lg:text-4xl sm:text-lg sm:w-fit w-[110%] text-[0.75rem] flex flex-row gap-2">
+            <h2
+              className="font-bold">
+                CREATE 
+                <span className="font-normal md:mx-4 mx-2">
+                —
+                </span>
+                COLLABORATE 
+                <span className="font-normal md:mx-4 mx-2">
+                —
+                </span>
+                EMPOWER 
+            </h2>
           </div>
         </div>
 
@@ -83,14 +94,14 @@ export default function Hero() {
               width={290}
               src="/vectors/mobile_people.svg"
               alt="wifi"
-              className="xl:opacity-0 opacity-65 lg:-mt-[14.5rem] md:-mt-[10.8rem] sm:-mt-[10.3rem] -mt-[5rem] lg:-ml-[10.3rem] md:-ml-[3.3rem] sm:-ml-[3.5rem] -ml-[4.1rem] scale-50 transition-all duration-300 ease-in-out hover:opacity-100 hover:glow-sm hover:glow-white"
+              className="xl:opacity-0 opacity-65 lg:-mt-[14.5rem] md:-mt-[10.8rem] sm:-mt-[10.3rem] -mt-[5rem] xl:-ml-[20rem] lg:-ml-[10.3rem] md:-ml-[3.3rem] -ml-[3.5rem] scale-50 transition-all duration-300 ease-in-out xl:hover:opacity-0 xl:hover:glow-transparent lg:hover:opacity-100 lg:hover:glow-sm hover:glow-white"
             />
           </div>
 
           <div className="flex justify-center md:mb-80 mb-52">
-            <h2 className="lg:text-xl md:text-lg text-[0.75rem] lg:mt-14 md:mt-8 mt-4 flex text-center text-white italic md:relative absolute md:w-fit w-32">
+            <p className="lg:text-xl md:text-lg text-[0.75rem] lg:mt-14 md:mt-8 mt-4 flex text-center text-white italic md:relative absolute md:w-fit w-32">
               Turning ideas into impactful solutions
-            </h2>
+            </p>
           </div>
         </div>
       </div>
