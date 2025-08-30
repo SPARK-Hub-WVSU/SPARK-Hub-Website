@@ -14,26 +14,25 @@ export default function Home_About() {
       >
         <div id="Upper_Part" className="flex flex-col w-full">
           <div id="Title" className="flex md:flex-row flex-col md:gap-5">
-            <h1 className="bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent sm:text-6xl text-3xl font-medium">
-              About
-            </h1>
-
             {/* Spark Typography */}
             <div>
               <div
                 id="SPARK_Typorgraphy"
                 className="font-bold sm:text-6xl text-3xl flex"
               >
-              <h1>
-                <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
-                  SPARK
-                </span> 
-                <span className="bg-gradient-to-r from-white to-slate-400 bg-clip-text lg:ml-[1.5rem] sm:ml-[1.25rem] ml-[0.5rem] text-transparent">
-                  HUB
-                </span>
-              </h1>
+                <h1>
+                  <span className="bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent font-medium">
+                    About
+                  </span>
+                  <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent sm:ml-5 ml-3">
+                    SPARK
+                  </span>
+                  <span className="bg-gradient-to-r from-white to-slate-400 bg-clip-text lg:ml-[1.5rem] sm:ml-[1.25rem] ml-[0.5rem] text-transparent">
+                    HUB
+                  </span>
+                </h1>
               </div>
-              <hr className="sm:border-t-4 border-t-2 border-yellow-500 md:w-full sm:w-[21rem] w-[11rem] sm:mt-3 mt-0"></hr>
+              <hr className="sm:border-t-4 border-t-2 border-yellow-500 sm:ml-52 ml-[6.5rem] sm:w-[21rem] w-[11rem] sm:mt-3 mt-0"></hr>
             </div>
           </div>
 
@@ -108,9 +107,7 @@ export default function Home_About() {
                                         transition-all duration-300 ease-in-out hover:glow-lg hover:glow-amber-300"
                     />
                     <div id="Innov_Title" className="flex flex-col md:gap-1">
-                      <p className="md:text-xl text-sm text-accent">
-                        Innovate
-                      </p>
+                      <p className="md:text-xl text-sm text-accent">Innovate</p>
                       <p className="text-white md:text-md text-[12px] font-light">
                         for the future
                       </p>
@@ -129,9 +126,7 @@ export default function Home_About() {
                       className="relative md:scale-100 scale-75 w-fit drop-shadow-[-10px_10px_18px_#000000] transition-all duration-300 ease-in-out hover:glow-lg hover:glow-amber-300"
                     />
                     <div id="Collab_Title" className="flex flex-col md:gap-1">
-                      <p className="md:text-xl text-sm text-accent">
-                        Research
-                      </p>
+                      <p className="md:text-xl text-sm text-accent">Research</p>
                       <p className="text-white md:text-md text-[12px] font-light">
                         with a purpose
                       </p>
