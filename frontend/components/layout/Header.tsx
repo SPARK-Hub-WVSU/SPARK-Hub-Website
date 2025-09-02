@@ -2,14 +2,19 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRightIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  ArrowRightIcon,
+  Bars3Icon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 import { useState } from "react";
+import Hamburger from "../icons/hamburger.svg";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-transparent"> 
+    <header className="bg-blue-950">
       <nav className="text-white text-2xl lg:text-2xl md:text-xl sm:text-lg w-full h-auto flex flex-row items-center justify-between py-3 px-4 sm:px-8 md:px-16 lg:px-36">
         {/* Logo */}
         <div id="Home" className="mb-2">
@@ -80,7 +85,13 @@ export default function Header() {
           {isMobileMenuOpen ? (
             <XMarkIcon className="h-6 w-6" />
           ) : (
-            <Bars3Icon className="h-6 w-6" />
+            // <Bars3Icon className="h-6 w-6" />
+            <Image
+              src={Hamburger}
+              width={35}
+              height={35}
+              alt="hamburger icon"
+            />
           )}
         </button>
       </nav>

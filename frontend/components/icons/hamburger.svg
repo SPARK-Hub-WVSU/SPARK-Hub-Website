@@ -1,0 +1,24 @@
+<svg width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="-154.353" y="-154.353" width="346.706" height="344.706"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(77.18px);clip-path:url(#bgblur_0_562_2306_clip_path);height:100%;width:100%"></div></foreignObject><g filter="url(#filter0_i_562_2306)" data-figma-bg-blur-radius="154.353">
+<rect width="38" height="36" rx="11.5765" fill="white" fill-opacity="0.03"/>
+<g clip-path="url(#clip1_562_2306)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.4 23.4H26.6C27.6488 23.4 28.5 24.2064 28.5 25.2C28.5 26.1936 27.6488 27 26.6 27H11.4C10.3512 27 9.5 26.1936 9.5 25.2C9.5 24.2064 10.3512 23.4 11.4 23.4ZM11.4 16.2H26.6C27.6488 16.2 28.5 17.0064 28.5 18C28.5 18.9936 27.6488 19.8 26.6 19.8H11.4C10.3512 19.8 9.5 18.9936 9.5 18C9.5 17.0064 10.3512 16.2 11.4 16.2ZM26.6 12.6H11.4C10.3512 12.6 9.5 11.7936 9.5 10.8C9.5 9.8064 10.3512 9 11.4 9H26.6C27.6488 9 28.5 9.8064 28.5 10.8C28.5 11.7936 27.6488 12.6 26.6 12.6Z" fill="#FFC700" fill-opacity="0.8"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_i_562_2306" x="-154.353" y="-154.353" width="346.706" height="344.706" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="4.63059"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.03 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_562_2306"/>
+</filter>
+<clipPath id="bgblur_0_562_2306_clip_path" transform="translate(154.353 154.353)"><rect width="38" height="36" rx="11.5765"/>
+</clipPath><clipPath id="clip1_562_2306">
+<rect width="19" height="18" fill="white" transform="matrix(-1 0 0 1 28.5 9)"/>
+</clipPath>
+</defs>
+</svg>
