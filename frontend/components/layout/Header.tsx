@@ -9,7 +9,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-blue-950">
+    <header className="bg-transparent">
       <nav className="text-white text-2xl lg:text-2xl md:text-xl sm:text-lg w-full h-auto flex flex-row items-center justify-between py-3 px-4 sm:px-8 md:px-16 lg:px-36">
         {/* Logo */}
         <div id="Home" className="mb-2">
@@ -86,25 +86,25 @@ export default function Header() {
 
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-primary-dark border-t border-white border-opacity-20">
+        <div className="md:hidden bg-white shadow-xl mb-12">
           <div className="px-4 py-4 space-y-4">
             <Link
               href="/about"
-              className="block text-white hover:text-accent transition-colors duration-300 py-2 text-lg"
+              className="block text-black hover:text-accent transition-colors duration-300 py-2 text-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About Us
             </Link>
             <Link
               href="/officers"
-              className="block text-white hover:text-accent transition-colors duration-300 py-2 text-lg"
+              className="block text-black hover:text-accent transition-colors duration-300 py-2 text-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Team
             </Link>
             <Link
               href=""
-              className="block text-white hover:text-accent transition-colors duration-300 py-2 text-lg"
+              className="block text-black hover:text-accent transition-colors duration-300 py-2 text-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact Us
