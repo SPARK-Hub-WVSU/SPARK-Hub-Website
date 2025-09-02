@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRightIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-import Hamburger from "../../public/icons/hamburger.svg";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,15 +23,7 @@ export default function Header() {
               width={32}
               height={32}
               priority
-              className="absolute sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
-            />
-            <Image
-              id="Logo_Glow"
-              src="/vectors/nav_logo.svg"
-              alt="SPARK Hub Logo Glow"
-              width={32}
-              height={32}
-              className="relative blur-sm opacity-60 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+              className="glow-xl glow-white sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
             />
             <h1 className="hidden sm:block">SPARK HUB</h1>
           </Link>
@@ -83,7 +74,7 @@ export default function Header() {
           ) : (
             // <Bars3Icon className="h-6 w-6" />
             <Image
-              src={Hamburger}
+              src="/icons/hamburger.svg"
               width={35}
               height={35}
               alt="hamburger icon"
