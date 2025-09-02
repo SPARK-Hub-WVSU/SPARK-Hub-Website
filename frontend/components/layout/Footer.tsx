@@ -71,10 +71,13 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-3 lg:gap-5 ">
               <Link href="" className="hover:glow-2xl hover:glow-white">
-                Section
+                Principles
               </Link>
               <Link href="" className="hover:glow-2xl hover:glow-white">
-                Section
+                Initiatives
+              </Link>
+              <Link href="" className="hover:glow-2xl hover:glow-white">
+                Testimonials
               </Link>
             </div>
           </div>
