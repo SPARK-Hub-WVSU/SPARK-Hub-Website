@@ -11,6 +11,7 @@ export default function Header() {
   return (
     <header className="bg-transparent">
       <nav className="text-white text-2xl lg:text-2xl md:text-xl sm:text-lg w-full h-auto flex flex-row items-center justify-between py-3 px-4 sm:px-8 md:px-16 lg:px-36">
+
         {/* Logo */}
         <div id="Home" className="mb-2">
           <Link
