@@ -104,18 +104,10 @@ export default function Header() {
             </Link>
             <Link
               href=""
-              className="block py-2"
+              className="block text-white hover:text-accent transition-colors duration-300 py-2 text-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <button className="text-accent bg-white bg-opacity-5 backdrop-blur-3xl w-full px-4 py-3 flex flex-row items-center justify-center gap-3 border rounded-2xl text-lg">
-                <div>Contact Us</div>
-                <div>
-                  <ArrowRightIcon
-                    strokeWidth={4}
-                    className="h-5 stroke-accent"
-                  />
-                </div>
-              </button>
+              Contact Us
             </Link>
           </div>
         </div>
