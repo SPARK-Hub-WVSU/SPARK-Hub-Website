@@ -2,13 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import {
-  ArrowRightIcon,
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { ArrowRightIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-import Hamburger from "../icons/hamburger.svg";
+import Hamburger from "../../public/icons/hamburger.svg";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -91,6 +87,7 @@ export default function Header() {
               width={35}
               height={35}
               alt="hamburger icon"
+              className="shadow-xl"
             />
           )}
         </button>
