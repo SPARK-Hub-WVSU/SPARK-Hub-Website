@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Logo */}
         <div
           id="Logo"
-          className="flex flex-col items-center lg:items-start gap-4 lg:gap-6 mb-8 lg:mb-0"
+          className="flex flex-col items-center lg:items-start gap-4 mb-8 lg:mb-0"
         >
           <div className="flex flex-col lg:flex-row items-center lg:items-center gap-3 lg:gap-6">
             <Image
@@ -18,9 +18,9 @@ export default function Footer() {
               src="/vectors/footer_logo.svg"
               alt="SPARK HUB Logo"
               priority
-              className="size-56 lg:size-16"
+              className="size-40 lg:size-16"
             />
-            <div className="font-bold text-6xl lg:text-5xl flex gap-2 lg:gap-5 text-center lg:text-left">
+            <div className="font-bold text-5xl flex gap-2 lg:gap-5 text-center lg:text-left">
               <h1 className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
                 SPARK
               </h1>
@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <p className="font-medium text-center lg:text-left text-2xl lg:text-xl tracking-widest lg:tracking-widest">
+          <p className="font-medium text-center lg:text-left text-xl tracking-widest lg:tracking-widest">
             IGNITING INNOVATION <br /> INNOVATING THE FUTURE
           </p>
         </div>
