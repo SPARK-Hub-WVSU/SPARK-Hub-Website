@@ -3,8 +3,8 @@ export default function Forms() {
     <form className="mb-12 bg-[url('/bg/footer_forms_gradient.png')] bg-cover bg-center bg-no-repeat rounded-[2rem]">
         <div id="Blur" className="backdrop-blur-[90px] px-8 lg:px-4 py-6 border border-white border-opacity-80 rounded-[2rem]">
         <div id="Prompt">
-            <p className="text-gray-200 text-center lg:text-left text-4xl lg:text-xl pb-2 font-medium"> Send a Message!</p>
-            <p className="text-white text-center lg:text-left text-xl lg:text-base text-opacity-80 pb-6 font-medium"> Fill out the fields below</p>
+            <p className="text-gray-200 text-center lg:text-left text-2xl lg:text-xl pb-2 font-medium"> Send a Message!</p>
+            <p className="text-white text-center lg:text-left text-lg lg:text-base text-opacity-80 pb-6 font-medium">Fill out the fields below</p>
         </div>
 
         <div id="Fill_Up" className="flex flex-col lg:flex-row gap-5 lg:gap-5">
