@@ -45,7 +45,7 @@ export default function Footer() {
             id="Home"
             className="flex flex-col gap-3 lg:gap-5 translate-x-2 lg:translate-x-0"
           >
-            <div className="font-semibold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white">
+            <div className="font-bold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white">
               <Link href="/"> Home </Link>
             </div>
             <div className="flex flex-col gap-3 lg:gap-5">
@@ -66,7 +66,7 @@ export default function Footer() {
 
           {/* About */}
           <div id="About" className="flex flex-col gap-3 lg:gap-5">
-            <div className="font-semibold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white lg:whitespace-nowrap">
+            <div className="font-bold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white lg:whitespace-nowrap">
               <Link href="/about"> About Us </Link>
             </div>
             <div className="flex flex-col gap-3 lg:gap-5 ">
@@ -84,7 +84,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div id="Contact" className="flex flex-col gap-3 lg:gap-5">
-            <div className="font-semibold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white">
+            <div className="font-bold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white">
               <Link href=""> Contacts </Link>
             </div>
             <div className="flex flex-col gap-3 lg:gap-5">
@@ -102,7 +102,7 @@ export default function Footer() {
             id="Team"
             className="flex flex-col gap-3 lg:gap-5 translate-x-2 lg:translate-x-0"
           >
-            <div className="font-semibold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white">
+            <div className="font-bold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white">
               <Link href="/officers"> Officers </Link>
             </div>
           </div>
