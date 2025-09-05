@@ -38,12 +38,12 @@ export default function Footer() {
         {/* Navigation Links */}
         <div
           id="Links"
-          className="grid grid-cols-3 lg:flex lg:flex-row gap-10 lg:gap-20 justify-items-start justify-center max-w-full lg:max-w-xl lg:text-left mx-auto lg:mx-0"
+          className="text-sm sm:text-base lg:text-lg grid grid-cols-3 lg:flex lg:flex-row gap-10 lg:gap-20 justify-items-start justify-center max-w-full lg:max-w-xl lg:text-left mx-auto lg:mx-0"
         >
           {/* Home */}
           <div
             id="Home"
-            className="flex flex-col gap-3 lg:gap-5 translate-x-2 lg:translate-x-0 text-md lg:text-lg"
+            className="flex flex-col gap-3 lg:gap-5 translate-x-2 lg:translate-x-0"
           >
             <div className="font-semibold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white">
               <Link href="/"> Home </Link>
@@ -66,7 +66,7 @@ export default function Footer() {
 
           {/* About */}
           <div id="About" className="flex flex-col gap-3 lg:gap-5">
-            <div className="font-semibold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white text-md lg:text-lg lg:whitespace-nowrap">
+            <div className="font-semibold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white lg:whitespace-nowrap">
               <Link href="/about"> About Us </Link>
             </div>
             <div className="flex flex-col gap-3 lg:gap-5 ">
@@ -84,7 +84,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div id="Contact" className="flex flex-col gap-3 lg:gap-5">
-            <div className="font-semibold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white text-md lg:text-lg">
+            <div className="font-semibold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white">
               <Link href=""> Contacts </Link>
             </div>
             <div className="flex flex-col gap-3 lg:gap-5">
@@ -97,13 +97,13 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Team */}
+          {/* Officers */}
           <div
             id="Team"
             className="flex flex-col gap-3 lg:gap-5 translate-x-2 lg:translate-x-0"
           >
-            <div className="font-semibold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white text-md lg:text-lg">
-              <Link href="/officers"> Team </Link>
+            <div className="font-semibold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white">
+              <Link href="/officers"> Officers </Link>
             </div>
           </div>
         </div>
