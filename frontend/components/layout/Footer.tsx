@@ -150,8 +150,10 @@ export default function Footer() {
 
         <div id="FB_GM" className="flex flex-row gap-11 lg:gap-10 relative">
           <Link
-            href=""
-            className="relative hover:scale-105 hover:brightness-105"
+            href="https://www.facebook.com/WVSUSparkHub"
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="relative transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-105"
           >
             <Image
               src="/icons/facebook.svg"
@@ -170,8 +172,10 @@ export default function Footer() {
           </Link>
 
           <Link
-            href=""
-            className="relative hover:scale-105 hover:brightness-105"
+            href="https://mail.google.com/mail/u/0/?fs=1&to=spark.hub@wvsu.edu.ph&tf=cm"
+              target="_blank" 
+              rel="noopener noreferrer"
+            className="relative transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-105"
           >
             <Image
               src="/icons/gmail.svg"
