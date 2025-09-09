@@ -35,23 +35,17 @@ export default function Header() {
           id="Content"
           className="hidden md:flex flex-row gap-4 lg:gap-10 justify-center items-center"
         >
-            <Link
+          <Link
             href="/about"
-            className="transform transition-all duration-300 ease-in-out text-sm md:text-base lg:text-xl relative group"
-            >
-            <span className="relative z-10">About Us</span>
-            <span
-              className="absolute left-0 bottom-[-0.40rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
-            />
-            </Link>
+            className="transform transition-all duration-300 ease-in-out hover:glow-2xl hover:glow-white text-sm md:text-base lg:text-xl"
+          >
+            About Us
+          </Link>
           <Link
             href="/officers"
-            className="transform transition-all duration-300 ease-in-out text-sm md:text-base lg:text-xl relative group"
-            >
-            <span className="relative z-10">Team</span>
-            <span
-              className="absolute left-0 bottom-[-0.40rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
-            />
+            className="transform transition-all duration-300 ease-in-out hover:glow-2xl hover:glow-white text-sm md:text-base lg:text-xl"
+          >
+            Team
           </Link>
           <Link
             id="Contact"
