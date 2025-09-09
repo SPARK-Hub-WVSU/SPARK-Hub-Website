@@ -10,20 +10,20 @@ export default function Forms() {
         <div id="Fill_Up" className="flex flex-col lg:flex-row gap-5 lg:gap-5">
             <div id="Name_Email" className="flex flex-col gap-4 w-full lg:w-auto"> 
                 <div id="Name" className="flex flex-col gap-2">
-                    <p className="text-accent text-2xl lg:text-lg font-medium">Name</p>
-                    <input type="text" placeholder="Juan Dela Cruz" 
+                    <p className="text-accent lg:text-2xl text-lg sm:font-medium">Name</p>
+                    <input type="text"
                     className="focus:text-white text-white focus:outline-none border border-white border-opacity-60 rounded-xl h-15 p-3 placeholder-white placeholder-opacity-75 text-xl lg:text-base bg-transparent font-medium w-full lg:w-64"></input>
                 </div>
                 <div id="Email" className="flex flex-col gap-2">
-                    <p className="text-accent text-2xl lg:text-lg font-medium">Email</p>
-                    <input type="text" placeholder="juan@wvsu.edu.ph" 
+                    <p className="text-accent lg:text-2xl text-lg sm:font-medium">Email</p>
+                    <input type="text"
                     className="focus:text-white text-white focus:outline-none border border-white border-opacity-60 rounded-xl h-15 p-3 placeholder-white placeholder-opacity-75 text-xl lg:text-base bg-transparent font-medium w-full lg:w-64"></input>
                 </div>
             </div>
 
             <div id="Message" className="flex flex-col gap-2 w-full lg:w-auto">
-                <p className="text-accent text-2xl lg:text-lg font-medium">Message</p>
-                <textarea placeholder="Enter Message..." 
+                <p className="text-accent lg:text-2xl text-lg sm:font-medium">Message</p>
+                <textarea
                 className="resize-none border border-white border-opacity-60 rounded-xl h-56 lg:h-32 p-3 placeholder-white placeholder-opacity-75 text-xl lg:text-base bg-transparent font-medium w-full lg:w-72
                 text-white focus:outline-none"/>
             </div>
