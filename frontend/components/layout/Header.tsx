@@ -21,10 +21,10 @@ export default function Header() {
             <Image
               src="/vectors/nav_logo.svg"
               alt="SPARK Hub Logo"
-              width={32}
-              height={32}
+              width={45}
+              height={45}
               priority
-              className="glow-xl glow-white sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+              className="glow-xl glow-white w-12 h-12 xl:w-16 xl:h-16"
             />
             <h1 className="hidden sm:block">SPARK HUB</h1>
           </Link>
@@ -76,8 +76,8 @@ export default function Header() {
             // <Bars3Icon className="h-6 w-6" />
             <Image
               src="/icons/hamburger.svg"
-              width={35}
-              height={35}
+              width={45}
+              height={45}
               alt="hamburger icon"
               className="shadow-xl"
             />
