@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header className="bg-transparent relative z-10">
-      <nav className="text-white text-2xl lg:text-2xl md:text-xl sm:text-lg w-full h-auto flex flex-row items-center justify-between md:py-3 px-4 sm:px-8 md:px-16 lg:px-36">
+      <nav className="text-white text-2xl lg:text-2xl md:text-xl sm:text-lg w-full h-auto flex flex-row items-center justify-between md:py-3 sm:px-12 px-6 md:px-16 lg:px-36 sm:my-7 my-5">
 
         {/* Logo */}
         <div id="Home" className="mb-2">
