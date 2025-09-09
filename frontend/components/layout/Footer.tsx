@@ -45,9 +45,14 @@ export default function Footer() {
             id="Home"
             className="flex flex-col gap-3 lg:gap-5 translate-x-2 lg:translate-x-0"
           >
-            <div className="font-bold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white">
-              <Link href="/"> Home </Link>
-            </div>
+            <Link href="/">
+              <span className="relative z-10 inline-block group">
+              Home
+              <span
+                className="absolute left-0 bottom-[-0.25rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
+              />
+              </span>
+            </Link>
             <div className="flex flex-col gap-3 lg:gap-5">
               <Link href="" className="hover:glow-2xl hover:glow-white">
                 Mission
@@ -66,9 +71,14 @@ export default function Footer() {
 
           {/* About */}
           <div id="About" className="flex flex-col gap-3 lg:gap-5">
-            <div className="font-bold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white lg:whitespace-nowrap">
-              <Link href="/about"> About Us </Link>
-            </div>
+            <Link href="/">
+              <span className="relative z-10 inline-block group">
+                About Us
+              <span
+                className="absolute left-0 bottom-[-0.25rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
+              />
+              </span>
+            </Link>
             <div className="flex flex-col gap-3 lg:gap-5 ">
               <Link href="" className="hover:glow-2xl hover:glow-white">
                 Principles
@@ -84,9 +94,14 @@ export default function Footer() {
 
           {/* Contact */}
           <div id="Contact" className="flex flex-col gap-3 lg:gap-5">
-            <div className="font-bold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white">
-              <Link href=""> Contacts </Link>
-            </div>
+            <Link href="/">
+              <span className="relative z-10 inline-block group">
+                Contacts
+              <span
+                className="absolute left-0 bottom-[-0.25rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
+              />
+              </span>
+            </Link>
             <div className="flex flex-col gap-3 lg:gap-5">
               <Link href="" className="hover:glow-2xl hover:glow-white">
                 Facebook
@@ -102,9 +117,14 @@ export default function Footer() {
             id="Team"
             className="flex flex-col gap-3 lg:gap-5 translate-x-2 lg:translate-x-0"
           >
-            <div className="font-bold transform transition-all duration-300 ease-in-out hover:glow-md hover:glow-white">
-              <Link href="/officers"> Officers </Link>
-            </div>
+            <Link href="/">
+              <span className="relative z-10 inline-block group">
+                Officers
+              <span
+                className="absolute left-0 bottom-[-0.25rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
+              />
+              </span>
+            </Link>
           </div>
         </div>
       </nav>
