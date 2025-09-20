@@ -21,11 +21,13 @@ export default function Footer() {
               className="size-40 lg:size-16"
             />
             <div className="font-bold text-5xl flex gap-2 lg:gap-5 text-center lg:text-left">
-              <h1 className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
-                SPARK
-              </h1>
-              <h1 className="bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
-                HUB
+              <h1>
+                <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent mr-2">
+                  SPARK
+                </span>
+                <span className="bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
+                  HUB
+                </span>
               </h1>
             </div>
           </div>
