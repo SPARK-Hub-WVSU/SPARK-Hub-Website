@@ -194,9 +194,7 @@ export default function Footer() {
           </Link>
 
           <Link
-            href="https://mail.google.com/mail/u/0/?fs=1&to=spark.hub@wvsu.edu.ph&tf=cm"
-              target="_blank" 
-              rel="noopener noreferrer"
+            href="mailto:spark.hub@wvsu.edu.ph"
             className="relative transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-105"
           >
             <Image
