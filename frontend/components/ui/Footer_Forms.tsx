@@ -9,25 +9,57 @@ export default function Forms() {
 
         <div id="Fill_Up" className="flex flex-col lg:flex-row gap-5 lg:gap-5">
             <div id="Name_Email" className="flex flex-col gap-4 w-full lg:w-auto"> 
+
+                {/* Name */}
                 <div id="Name" className="flex flex-col gap-2">
-                    <p className="text-accent lg:text-2xl text-lg sm:font-medium">Name</p>
-                    <input type="text"
-                    className="focus:text-white text-white focus:outline-none border border-white border-opacity-60 rounded-xl h-15 p-3 placeholder-white placeholder-opacity-75 text-xl lg:text-base bg-transparent font-medium w-full lg:w-64"></input>
+                <label 
+                    htmlFor="name" 
+                    className="text-accent lg:text-2xl text-lg sm:font-medium"
+                >
+                    Name
+                </label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name"
+                    className="focus:text-white text-white focus:outline-none border border-white border-opacity-60 rounded-xl h-15 p-3 text-xl lg:text-base bg-transparent font-medium w-full lg:w-64"
+                />
                 </div>
+
+                {/* Email */}
                 <div id="Email" className="flex flex-col gap-2">
-                    <p className="text-accent lg:text-2xl text-lg sm:font-medium">Email</p>
-                    <input type="text"
-                    className="focus:text-white text-white focus:outline-none border border-white border-opacity-60 rounded-xl h-15 p-3 placeholder-white placeholder-opacity-75 text-xl lg:text-base bg-transparent font-medium w-full lg:w-64"></input>
+                <label 
+                    htmlFor="email" 
+                    className="text-accent lg:text-2xl text-lg sm:font-medium"
+                >
+                    Email
+                </label>
+                <input 
+                    type="text" 
+                    id="email" 
+                    name="email"
+                    className="focus:text-white text-white focus:outline-none border border-white border-opacity-60 rounded-xl h-15 p-3 text-xl lg:text-base bg-transparent font-medium w-full lg:w-64"
+                />
                 </div>
             </div>
 
+            {/* Message */}
             <div id="Message" className="flex flex-col gap-2 w-full lg:w-auto">
-                <p className="text-accent lg:text-2xl text-lg sm:font-medium">Message</p>
+                <label 
+                htmlFor="message" 
+                className="text-accent lg:text-2xl text-lg sm:font-medium"
+                >
+                Message
+                </label>
                 <textarea
-                className="resize-none border border-white border-opacity-60 rounded-xl h-56 lg:h-32 p-3 placeholder-white placeholder-opacity-75 text-xl lg:text-base bg-transparent font-medium w-full lg:w-72
-                text-white focus:outline-none"/>
+                id="message"
+                name="message"
+                className="resize-none border border-white border-opacity-60 rounded-xl lg:h-full p-3 text-xl lg:text-base bg-transparent font-medium w-full lg:w-72
+                text-white focus:outline-none"
+                />
             </div>
-        </div>  
+        </div>
+
         <button className="transform transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-105 font-semibold text-lg text-white bg-gradient-to-r from-cyan-600 to-teal-400 mt-4 w-full rounded-xl py-3">
             Submit
         </button>
