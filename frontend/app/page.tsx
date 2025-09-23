@@ -1,6 +1,7 @@
 import Hero from "@/components/sections/Hero_Section";
 import Home_About from "@/components/sections/Home_About";
 import Image from "next/image";
+import { Circle } from "@/components/ui/Vision_Mission_Circle";
 
 export default function Home() {
   return (
@@ -18,23 +19,52 @@ export default function Home() {
       {/* Mission */}
       <section
         id="Mission"
-        className="lg:bg-[url('/bg/mission_bg.png')] bg-[url('/bg/mobile_mission_bg.png')] bg-cover bg-center bg-no-repeat md:py-96 sm:py-80 py-32 lg:px-36 sm:px-16 px-9 text-slate-900 flex flex-col items-center justify-center"
+        className=" bg-no-repeat md:py-96 sm:py-80 py-32 lg:px-36 sm:px-16 px-9 text-slate-900 flex flex-col items-center justify-center"
       >
+        {/* Background Circles */}
+        <div className="relative">
+          <div className="absolute md:-top-[23rem] md:left-[23rem]">
+            <Circle size={470} />
+          </div>
+          <div className="absolute md:top-[15rem] md:-left-[12rem]">
+            <Circle size={465} />
+          </div>
+          <div className="absolute md:-top-[5rem] md:left-[8rem]">
+            <Circle size={245} />
+          </div>
+          <div className="absolute md:top-[16rem] md:left-[18rem]">
+            <Circle size={160} />
+          </div>
+          <div className="absolute md:top-[25rem] md:left-[29rem]">
+            <Circle size={100} />
+          </div>
+          <div className="absolute md:top-[28rem] md:right-[28rem]">
+            <Circle variant="teal" size={470} />
+          </div>
+          <div className="absolute md:top-[18rem] md:right-[15rem]">
+            <Circle variant="teal" size={265} />
+          </div>
+          <div className="absolute md:-top-[5rem] md:right-[10rem]">
+            <Circle variant="teal" size={200} />
+          </div>
+          <div className="absolute md:top-[10rem] md:right-[32rem]">
+            <Circle variant="teal" size={130} />
+          </div>
+        </div>
+
         <div
           id="Our_Mission"
-          className="bg-white md:rounded-[5rem] rounded-[1rem] border border-black border-opacity-30 xl:flex xl:justify-between md:px-24 px-5 py-10 bg-opacity-20 backdrop-blur-[10px] md:mb-24 md:max-w-[1175px] min-w-[280px] w-full justify-center"
+          className="bg-white md:rounded-[5rem] rounded-[1rem] border border-black border-opacity-30 xl:flex xl:justify-between md:px-24 px-5 py-10 bg-opacity-20 backdrop-blur-[10px] md:max-w-[1175px] min-w-[280px] w-full justify-center"
         >
           {/* Our Mission */}
           <div
             id="Title"
             className="flex flex-col md:gap-5 gap-3 md:mt-56 mt-0"
           >
-            <h1
-              className="md:text-8xl text-[2rem]">
+            <h1 className="md:text-8xl text-[2rem]">
               Our
-              <span
-                className="font-semibold md:-mt-0 -mt-3">
-                  <br/> Mission
+              <span className="font-semibold md:-mt-0 -mt-3">
+                <br /> Mission
               </span>
             </h1>
             <hr className="md:border-t-4 border-slate-900 md:w-40 w-32"></hr>
@@ -84,24 +114,6 @@ export default function Home() {
             </li>
 
             <li
-              id="Nurturing"
-              className="flex flex-row items-center md:gap-5 gap-2"
-            >
-              <Image
-                width={40}
-                height={40}
-                src="\icons\nurturing.svg"
-                alt="transforming icon"
-                className="drop-shadow-md md:scale-100 scale-75"
-              />
-
-              <p id="Descripition">
-                <strong>Nurturing an ecosystem </strong>
-                that drives global comeptence and innovation.
-              </p>
-            </li>
-
-            <li
               id="Fostering"
               className="flex flex-row items-center md:gap-5 gap-2"
             >
@@ -116,6 +128,24 @@ export default function Home() {
               <p id="Descripition">
                 <strong>Fostering tech and business skills </strong>
                 through disciplinary training.
+              </p>
+            </li>
+
+            <li
+              id="Nurturing"
+              className="flex flex-row items-center md:gap-5 gap-2"
+            >
+              <Image
+                width={40}
+                height={40}
+                src="\icons\nurturing.svg"
+                alt="transforming icon"
+                className="drop-shadow-md md:scale-100 scale-75"
+              />
+
+              <p id="Descripition">
+                <strong>Nurturing an ecosystem </strong>
+                that drives global comeptence and innovation.
               </p>
             </li>
           </ul>
@@ -136,12 +166,10 @@ export default function Home() {
             className="flex flex-col text-center md:py-40 py-10 mx-auto md:gap-5 w-full"
           >
             <div id="Title" className="flex md:gap-5 gap-3 justify-center">
-              <h1
-                className="md:text-8xl text-[2rem]">
+              <h1 className="md:text-8xl text-[2rem]">
                 Our
-                <span
-                  className="font-semibold md:-mt-0 -mt-3 md:ml-[1.5rem] ml-[0.75rem]">
-                    Vision
+                <span className="font-semibold md:-mt-0 -mt-3 md:ml-[1.5rem] ml-[0.75rem]">
+                  Vision
                 </span>
               </h1>
             </div>
