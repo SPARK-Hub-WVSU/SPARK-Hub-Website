@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
 import OfficersGrid from "@/components/ui/Officers_grid";
-import Image from "next/image";
 import { officersByYear } from "@/data/officers";
 
 export default function Officers() {
@@ -15,25 +14,15 @@ export default function Officers() {
 
   return (
     <>
-      <div
-        className="relative sm:min-h-screen w-full"
-      >
-        <Image
-          src="/bg/officers_bg.webp"
-          alt="Team background"
-          fill
-          priority
-          className="object-cover object-center -z-10"
-          sizes="100vw"
-        />
+      <section className="bg-[#022A34] lg:bg-[url('/bg/officers_bg.webp')] bg-cover bg-center bg-no-repeat sm:min-h-screen lg:-mt-30 -mt-40">
 
-        <section className="flex justify-center text-center py-24 sm:py-52 md:py-72">
+        <div className="flex justify-center text-center py-24 sm:py-52 md:py-72">
           <h1 className="font-bold text-4xl sm:text-6xl md:text-8xl text-white">
             Meet the <br />
             <strong className="text-accent">TEAM</strong>
           </h1>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <div className="relative min-h-screen w-full bg-white py-14">
         <img
@@ -52,11 +41,11 @@ export default function Officers() {
 
         <img
           src="/bg/excom-bottom_bg.webp"
-          className="absolute bottom-0 left-0 w-full h-auto object-cover -z-10"
+          className="absolute bottom-0 -left-16 w-full h-auto object-cover z-10"
           alt="excom bg"
         />
 
-        <section className="relative justify-center flex flex-row gap-8 z-20 mt-4 font-medium text-sm sm:text-base">
+        <section className="relative justify-center flex flex-row gap-8 z-20 mt-4 font-medium text:sm sm:text-base">
           {["2025", "2024", "2023"].map((y) => (
             <button
               key={y}
