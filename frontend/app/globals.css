@@ -32,3 +32,15 @@ body {
   padding: 0;
   margin: 0;
 }
+
+@layer utilities {
+  .translate-sm-only {
+    @apply translate-y-0;
+  }
+}
+
+@media (min-width: 980px) {
+  .translate-sm-only {
+    @apply translate-y-16;
+  }
+}
