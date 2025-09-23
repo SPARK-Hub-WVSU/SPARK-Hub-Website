@@ -1,4 +1,5 @@
 import React from 'react'
+import OfficersGrid from '@/components/ui/Officers_grid';
 
 export default function Officers() {
   return (
@@ -14,7 +15,7 @@ export default function Officers() {
         </section>
       </div>
 
-      <section className="relative min-h-screen w-full bg-white py-14">
+      <div className="relative min-h-screen w-full bg-white py-14">
         <img
           src="/bg/excom-top_bg.webp"
           className="absolute inset-0 w-full h-auto"
@@ -26,9 +27,9 @@ export default function Officers() {
             <strong className="text-accent font-sarina font-normal">2025</strong>
           </h1>
         </header>
+        <OfficersGrid />
 
-
-      </section>
+      </div> 
     </>
   );
 }
