@@ -22,7 +22,7 @@ const OfficerCard: React.FC<OfficerCardProps> = ({
 
   return (
     <div
-      className={`relative w-40 h-48 sm:w-80 sm:h-96 border-2 border-[#3783945C] rounded-[1.5rem] sm:rounded-[3.625rem] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-visible ${offsetClass} z-20`}
+      className={`relative w-36 h-44 sm:w-80 sm:h-96 border-2 border-[#3783945C] rounded-[1.5rem] sm:rounded-[3.625rem] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-visible ${offsetClass} z-20`}
     >
       {image ? (
         <Image
