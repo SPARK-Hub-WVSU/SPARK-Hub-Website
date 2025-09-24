@@ -2,7 +2,7 @@ type Variant = "yellow" | "teal";
 
 interface CircleProps {
   variant?: Variant;
-  size? : number;
+  className?: string;
 }
 
 const variantClasses: Record<Variant, string> = {
@@ -12,12 +12,11 @@ const variantClasses: Record<Variant, string> = {
 
 export const Circle: React.FC<CircleProps> = ({
   variant = "yellow",
-  size = 460,
+  className = "",
 }) => {
   return (
     <div
-      className={` rotate-[-123.15deg] rounded-full ${variantClasses[variant]}`}
-      style={{ width: size, height: size}}
+      className={`rotate-[-123.15deg] rounded-full ${variantClasses[variant]} ${className}`}
     />
   );
 };
