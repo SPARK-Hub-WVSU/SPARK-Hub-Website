@@ -49,10 +49,8 @@ export default function Footer() {
           >
             <Link href="/">
               <span className="relative z-10 inline-block group">
-              Home
-              <span
-                className="absolute left-0 bottom-[-0.25rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
-              />
+                Home
+                <span className="absolute left-0 bottom-[-0.25rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center" />
               </span>
             </Link>
             <div className="flex flex-col gap-3 lg:gap-5">
@@ -76,9 +74,7 @@ export default function Footer() {
             <Link href="/">
               <span className="relative z-10 inline-block group">
                 About Us
-              <span
-                className="absolute left-0 bottom-[-0.25rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
-              />
+                <span className="absolute left-0 bottom-[-0.25rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center" />
               </span>
             </Link>
             <div className="flex flex-col gap-3 lg:gap-5 ">
@@ -99,9 +95,7 @@ export default function Footer() {
             <Link href="/">
               <span className="relative z-10 inline-block group">
                 Contacts
-              <span
-                className="absolute left-0 bottom-[-0.25rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
-              />
+                <span className="absolute left-0 bottom-[-0.25rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center" />
               </span>
             </Link>
             <div className="flex flex-col gap-3 lg:gap-5">
@@ -122,9 +116,7 @@ export default function Footer() {
             <Link href="/">
               <span className="relative z-10 inline-block group">
                 Officers
-              <span
-                className="absolute left-0 bottom-[-0.25rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
-              />
+                <span className="absolute left-0 bottom-[-0.25rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center" />
               </span>
             </Link>
           </div>
@@ -173,7 +165,7 @@ export default function Footer() {
         <div id="FB_GM" className="flex flex-row gap-11 lg:gap-10 relative">
           <Link
             href="https://www.facebook.com/WVSUSparkHub"
-            target="_blank" 
+            target="_blank"
             rel="noopener noreferrer"
             className="relative transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-105"
           >

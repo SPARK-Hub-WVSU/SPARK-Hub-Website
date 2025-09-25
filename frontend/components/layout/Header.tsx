@@ -11,7 +11,6 @@ export default function Header() {
   return (
     <header className="bg-transparent relative z-10">
       <nav className="text-white text-2xl lg:text-2xl md:text-xl sm:text-lg w-full h-auto flex flex-row items-center justify-between md:py-3 sm:px-12 px-6 md:px-16 lg:px-36 sm:my-7 my-5">
-
         {/* Logo */}
         <div id="Home" className="mb-2">
           <Link
@@ -35,23 +34,19 @@ export default function Header() {
           id="Content"
           className="hidden md:flex flex-row gap-4 lg:gap-10 justify-center items-center"
         >
-            <Link
+          <Link
             href="/about"
             className="transform transition-all duration-300 ease-in-out text-sm md:text-base lg:text-xl relative group"
-            >
+          >
             <span className="relative z-10">About Us</span>
-            <span
-              className="absolute left-0 bottom-[-0.40rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
-            />
-            </Link>
+            <span className="absolute left-0 bottom-[-0.40rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center" />
+          </Link>
           <Link
             href="/officers"
             className="transform transition-all duration-300 ease-in-out text-sm md:text-base lg:text-xl relative group"
-            >
+          >
             <span className="relative z-10">Team</span>
-            <span
-              className="absolute left-0 bottom-[-0.40rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
-            />
+            <span className="absolute left-0 bottom-[-0.40rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center" />
           </Link>
           <Link
             id="Contact"
