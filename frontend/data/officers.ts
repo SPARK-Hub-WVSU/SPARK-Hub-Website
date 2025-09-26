@@ -6,7 +6,7 @@ export const officersByYear = {
 
         { name: "Carl Vincent Latoza", position: "Chief Operations Officer" },
         { name: "Maria Consuelo", position: "Associate Operations Officer" },
-        { name: "Jan Michael Angelou E. Casidsid", position: "Associate Operations Officer" },
+        { name: "Jan Michael Angelou Casidsid", position: "Associate Operations Officer" },
 
         { name: "John Manuel Carado", position: "Chief Business Officer" },
         { name: "Elaijah Aman", position: "Associate Business Officer" },
@@ -22,27 +22,27 @@ export const officersByYear = {
         { name: "Christopher Glenn Bedis", position: "Associate Research & Development Officer" },
         { name: "Sheenlou Eian Bartolome", position: "Associate Research & Developmen Officer" },
 
-        { offset: "sm:translate-y-16", name: "Augustine Seve Kang Bacale", position: "Chief Training Officer" },
+        { name: "Augustine Seve Kang Bacale", position: "Chief Training Officer" },
         { name: "Wendi Deocares", position: "Associate Training Officer" },
 
         { name: "Cathleen Kaye Orio", position: "Chief Creative Officer" },
-        { offset: "sm:translate-y-16", name: "Janine Megumi Cabangal", position: "Associate Creatives Officer" },
+        { name: "Janine Megumi Cabangal", position: "Associate Creatives Officer" },
     ],
     2024: [
-        { name: "Hsien-na T. Kuo", position: "Chief Executive Officer ", image: "/officers/2024/Hsien.webp" },
+        { name: "Hsien-na Kuo", position: "Chief Executive Officer ", image: "/officers/2024/Hsien.webp" },
         { name: "Augustine Seve Kang Bacale", position: "Chief Secretary" },
         { name: "Carl Vincent Latoza", position: "Chief Operations Officer " },
 
         { name: "Christopher Glenn Bedis", position: "Associate Operations Officer" },
-        { offset: "sm:translate-y-16", name: "John Manuel Carado", position: "Chief Business Officer " },
+        { name: "John Manuel Carado", position: "Chief Business Officer " },
         { name: "Gracer Ann Escalada", position: "Associate Business Officer" },
 
         { name: "Mart Lorence Dula-ogon", position: "Chief Finance Officer " },
-        { offset: "sm:translate-y-16", name: "Maria Consuelo", position: "Associate Finance Officer " },
+        { name: "Maria Consuelo", position: "Associate Finance Officer " },
         { name: "Kyla Bearneza", position: "Chief Marketing Officer " },
 
         { name: "Clyde Habagat", position: "Associate Marketing Officer" },
-        { offset: "sm:translate-y-16", name: "Kirk Henrich Gamo", position: "Chief Research & Development  Officer" },
+        { name: "Kirk Henrich Gamo", position: "Chief Research & Development  Officer" },
         { name: "John Lorenz Leonor", position: "Associate Research & Development  Officer" },
 
         { name: "Karen Cabrillos Madoline", position: "Chief Training Officer" },
