@@ -4,7 +4,7 @@ import Forms from "@/components/ui/Footer_Forms";
 
 export default function Footer() {
   return (
-    <footer className="bg-[url('/bg/footer_bg.png')] bg-cover bg-center bg-no-repeat w-full min-h-screen">
+    <footer className="bg-[url('/bg/footer_bg.webp')] bg-cover bg-center bg-no-repeat w-full min-h-screen">
       <nav className="text-white text-xl w-auto h-auto flex flex-col lg:flex-row justify-between py-8 lg:py-20 px-4 lg:px-36">
         {/* Logo */}
         <div
