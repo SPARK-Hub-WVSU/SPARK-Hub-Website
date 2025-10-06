@@ -1,9 +1,10 @@
 import Hero from "@/components/sections/Hero_Section";
 import Home_About from "@/components/sections/Home_About";
 import Image from "next/image";
-import { MissionCircles } from "@/components/ui/Mission_Vision_Background_Circles";
-import { VisionCircles } from "@/components/ui/Mission_Vision_Background_Circles";
-
+import {
+  MissionCircles,
+  VisionCircles,
+} from "@/components/ui/BackgroundCircles";
 export default function Home() {
   return (
     <>
