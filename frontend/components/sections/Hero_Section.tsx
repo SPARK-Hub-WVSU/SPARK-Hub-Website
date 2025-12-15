@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="Hero_Section"
-      className="bg-[#022A34] lg:bg-[url('/bg/hero_bg.png')] bg-[url('/bg/mobile_hero_bg.png')] bg-cover bg-center bg-no-repeat md:max-w-full min-h-screen lg:-mt-40 -mt-40 md:pt-96 pt-36 flex flex-col items-center justify-center"
+      className="bg-[#022A34] lg:bg-[url('/bg/hero_bg.webp')] bg-[url('/bg/mobile_hero_bg.webp')] bg-cover bg-center bg-no-repeat md:max-w-full min-h-screen lg:-mt-40 -mt-40 md:pt-96 pt-36 flex flex-col items-center justify-center"
     >
       {/* Hero */}
       <div
@@ -53,7 +53,7 @@ export default function Hero() {
           <h1>
             <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
               SPARK
-            </span> 
+            </span>
             <span className="bg-gradient-to-r from-white to-slate-400 bg-clip-text lg:ml-[1.5rem] sm:ml-[1.25rem] ml-[1rem] text-transparent">
               HUB
             </span>
@@ -63,17 +63,12 @@ export default function Hero() {
         {/* Tag Line */}
         <div id="Tag Line">
           <div className="text-white lg:text-4xl sm:text-lg sm:w-fit w-[110%] text-[0.75rem] flex flex-row gap-2">
-            <h2
-              className="font-bold">
-                CREATE 
-                <span className="font-normal md:mx-4 mx-2">
-                —
-                </span>
-                COLLABORATE 
-                <span className="font-normal md:mx-4 mx-2">
-                —
-                </span>
-                EMPOWER 
+            <h2 className="font-bold">
+              CREATE
+              <span className="font-normal md:mx-4 mx-2">—</span>
+              COLLABORATE
+              <span className="font-normal md:mx-4 mx-2">—</span>
+              EMPOWER
             </h2>
           </div>
         </div>
