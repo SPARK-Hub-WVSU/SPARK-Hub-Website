@@ -1,7 +1,7 @@
 // TODO: Enable the footer forms to successfully send emails on SPARK Hub's official email
 export default function Forms() {
   return (
-    <form className="mb-12 bg-[url('/bg/footer_forms_gradient.png')] bg-cover bg-center bg-no-repeat rounded-[2rem]">
+    <form className="mb-12 bg-[url('/bg/footer_forms_gradient.webp')] bg-cover bg-center bg-no-repeat rounded-[2rem]">
       <div
         id="Blur"
         className="backdrop-blur-[90px] px-8 lg:px-4 py-6 border border-white border-opacity-80 rounded-[2rem]"

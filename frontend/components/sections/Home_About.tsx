@@ -5,7 +5,7 @@ export default function Home_About() {
   return (
     <section
       id="Home_About"
-      className="bg-[#022A34] md:bg-[url('/bg/home_about_bg.png')] bg-[url('/bg/mobile_home_about_bg.png')] bg-cover bg-center bg-no-repeat md:max-w-full min-h-screen md:pb-48 md:pt-[2rem] flex flex-col items-center justify-center"
+      className="bg-[#022A34] md:bg-[url('/bg/home_about_bg.webp')] bg-[url('/bg/mobile_home_about_bg.webp')] bg-cover bg-center bg-no-repeat md:max-w-full min-h-screen md:pb-48 md:pt-[2rem] flex flex-col items-center justify-center"
     >
       {/* About Spark*/}
       <div
@@ -40,12 +40,12 @@ export default function Home_About() {
           <div className="xl:w-fit w-[90%]">
             <div
               id="Image_Card"
-              className="bg-[url('/bg/home_image_card_gradient.png')] bg-cover bg-center bg-no-repeat md:rounded-[2rem] rounded-[1rem] w-fit 2xl:mt-10 xl:mt-8 md:mt-10 mt-4"
+              className="bg-[url('/bg/home_image_card_gradient.webp')] bg-cover bg-center bg-no-repeat md:rounded-[2rem] rounded-[1rem] w-fit 2xl:mt-10 xl:mt-8 md:mt-10 mt-4"
             >
               <Image
                 width={720}
                 height={720}
-                src="/images/home_img_card.png"
+                src="/images/home_img_card.webp"
                 alt="home image card"
                 className="md:p-7 p-2 border-2 border-white border-opacity-5 md:rounded-[2rem] rounded-[1rem] backdrop-blur-[90px]"
               />
@@ -56,7 +56,7 @@ export default function Home_About() {
           <div className="flex 2xl:ml-[41rem] xl:ml-[33rem] ml-[25%] md:mb-0 mb-7">
             <div
               id="Right_Card"
-              className="bg-[url('/bg/home_right_card_gradient.png')] md:rounded-[2rem] rounded-[1rem] bg-cover bg-center bg-no-repeat xl:w-max lg:w-full md:w-max w-full 2xl:-mt-56 xl:-mt-48 lg:-mt-24 md:-mt-14 -mt-10"
+              className="bg-[url('/bg/home_right_card_gradient.webp')] md:rounded-[2rem] rounded-[1rem] bg-cover bg-center bg-no-repeat xl:w-max lg:w-full md:w-max w-full 2xl:-mt-56 xl:-mt-48 lg:-mt-24 md:-mt-14 -mt-10"
             >
               <div
                 id="Right_Card_Info"
