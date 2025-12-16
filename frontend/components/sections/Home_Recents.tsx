@@ -6,41 +6,44 @@ export default function Recents() {
       {/* Layout */}
       <div
         id="layout"
-        className="md:max-w-[1175px] md:flex justify-between mx-auto px-9 lg:mt-20 lg:mb-36 "
+        className="xl:max-w-[1175px] flex md:flex-row flex-col md:justify-between justify-center mx-auto xl:px-0 lg:px-32 px-9 lg:mt-20 lg:mb-36 py-32 lg:gap-24 md:gap-12 gap-8"
       >
-        <div id="title">
-          <h1 className="lg:text-6xl md:text-36 lg:w-80 lg:leading-tight">
+        <div id="title" className="flex flex-col lg:w-80 w-72 gap-2">
+          <h1 className="lg:text-6xl md:text-5xl text-4xl lg:leading-tight md:leading-tight">
             <span className="text-[#2E2E2E]">Recent</span> <br></br>
             <strong className="text-[#378394]">News and Events</strong>
           </h1>
-          <hr className="md:border-t-4 md:w-44 border-[#378394]"></hr>
-          <h3 className="lg:text-2xl lg:leading-tight lg:mt-5 lg:w-72">
+          <hr className="md:border-t-4 border-t-2 md:w-44 w-20 border-[#378394]"></hr>
+          <h3 className="lg:text-2xl md:text-xl text-lg lg:leading-tight md:leading-tight lg:mt-5 lg:w-72">
             Highlights from recent events and activities.
           </h3>
         </div>
         <a
           href="#"
           id="thumbnail"
-          className="flex flex-col gap-5 text-[#2E2E2E] lg:max-w-[700px]"
+          className="flex flex-col md:gap-5 gap-4 text-[#2E2E2E] lg:max-w-[700px] transform transition-all duration-300 ease-in-out hover:scale-105"
         >
           <Image
             width={700}
             height={400}
             src="/images/home_img_car.webp"
             alt="mission graphics"
-            className="bg-black"
+            className="bg-black max-w-[700px] w-full"
           />
-          <h2 id="article_title" className="md:text-4xl font-medium">
+          <h2 id="article_title" className="md:text-4xl text-xl font-medium">
             Article Title
           </h2>
           <p
             id="artilce_headline"
-            className="md:text-xl overflow-hidden line-clamp-2"
+            className="lg:text-xl md:text-lg text-sm overflow-hidden line-clamp-2"
           >
             The venue was buzzing with energy as students from WVSU Main and
             External Campuses came together for
           </p>
-          <p id="date_time_group" className="flex flex-col md:text-xl ">
+          <p
+            id="date_time_group"
+            className="flex flex-col lg:text-xl md:text-lg text-xs "
+          >
             <span id="time_read" className="font-semibold">
               8 Mins Read
             </span>
