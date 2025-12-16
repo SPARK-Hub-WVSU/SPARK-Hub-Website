@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Forms from "@/components/ui/Footer_Forms";
+import Forms from "@/components/ui/Contact_Form";
 
 export default function Footer() {
   return (
