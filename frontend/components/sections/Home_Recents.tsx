@@ -12,9 +12,9 @@ export default function Recents() {
         <div id="title" className="flex flex-col lg:w-80 w-72 gap-2">
           <h1 className="lg:text-6xl md:text-5xl text-4xl lg:leading-tight md:leading-tight">
             <span className="text-[#2E2E2E]">Recent</span> <br></br>
-            <strong className="text-[#378394]">News and Events</strong>
+            <strong className="text-primary">News and Events</strong>
           </h1>
-          <hr className="md:border-t-4 border-t-2 md:w-44 w-20 border-[#378394]"></hr>
+          <hr className="md:border-t-4 border-t-2 md:w-44 w-20 border-primary"></hr>
           <h3 className="lg:text-2xl md:text-xl text-lg lg:leading-tight md:leading-tight lg:mt-5 lg:w-72">
             Highlights from recent events and activities.
           </h3>
@@ -28,9 +28,9 @@ export default function Recents() {
           <Image
             width={700}
             height={400}
-            src="/images/home_img_car.webp"
+            src="/images/home_img_card.webp"
             alt="mission graphics"
-            className="bg-black max-w-[700px] w-full"
+            className="bg-white max-w-[700px] w-full"
           />
 
           <div className="relative w-fit">
