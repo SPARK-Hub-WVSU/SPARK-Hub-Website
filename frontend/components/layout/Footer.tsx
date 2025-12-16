@@ -150,7 +150,7 @@ export default function Footer() {
           </p>
         </div>
         <div className="w-full lg:w-auto">
-          <Forms />
+          <Forms variant="footer" />
         </div>
       </section>
 
