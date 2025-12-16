@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Recents() {
   return (
@@ -18,10 +19,11 @@ export default function Recents() {
             Highlights from recent events and activities.
           </h3>
         </div>
-        <a
+
+        <Link
           href="#"
           id="thumbnail"
-          className="flex flex-col md:gap-5 gap-4 text-[#2E2E2E] lg:max-w-[700px] transform transition-all duration-300 ease-in-out hover:scale-105"
+          className="group flex flex-col md:gap-5 gap-4 text-[#2E2E2E] lg:max-w-[700px]"
         >
           <Image
             width={700}
@@ -30,9 +32,17 @@ export default function Recents() {
             alt="mission graphics"
             className="bg-black max-w-[700px] w-full"
           />
-          <h2 id="article_title" className="md:text-4xl text-xl font-medium">
-            Article Title
-          </h2>
+
+          <div className="relative w-fit">
+            <h2
+              id="article_title"
+              className="md:text-4xl text-xl font-medium relative"
+            >
+              Article Title
+            </h2>
+            <span className="absolute left-0 bottom-[-0.40rem] w-full h-1 bg-[#2E2E2E] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center" />
+          </div>
+
           <p
             id="artilce_headline"
             className="lg:text-xl md:text-lg text-sm overflow-hidden line-clamp-2"
@@ -50,7 +60,7 @@ export default function Recents() {
             <span id="date_posted">01 Aug 2025</span>
           </p>
           <hr></hr>
-        </a>
+        </Link>
       </div>
     </section>
   );
