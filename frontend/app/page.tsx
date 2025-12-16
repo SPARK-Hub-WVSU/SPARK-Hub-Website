@@ -1,10 +1,12 @@
 import Hero from "@/components/sections/Hero_Section";
 import Home_About from "@/components/sections/Home_About";
+import Home_Recents from "@/components/sections/Home_Recents";
 import Image from "next/image";
 import {
   MissionCircles,
   VisionCircles,
 } from "@/components/ui/BackgroundCircles";
+
 export default function Home() {
   return (
     <>
@@ -161,6 +163,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      {/* Recent News and Events*/}
+      <section id="Recents">
+        <Home_Recents />
       </section>
     </>
   );
