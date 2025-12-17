@@ -14,10 +14,9 @@ export default function Officers() {
 
   return (
     <>
-      <section className="bg-[#022A34] lg:bg-[url('/bg/officers_bg.webp')] bg-cover bg-center bg-no-repeat sm:min-h-screen lg:-mt-30 -mt-40">
-
+      <section className="bg-[#022A34] bg-[url('/bg/officers_bg.webp')] bg-cover bg-center bg-no-repeat sm:min-h-screen lg:-mt-30 -mt-40">
         <div className="flex justify-center text-center py-24 sm:py-52 md:py-72">
-          <h1 className="font-bold text-4xl sm:text-6xl md:text-8xl text-white">
+          <h1 className="font-bold text-4xl sm:text-6xl md:text-8xl  md:mt-0 mt-16 text-white">
             Meet the <br />
             <strong className="text-accent">TEAM</strong>
           </h1>
@@ -31,9 +30,14 @@ export default function Officers() {
           alt="excom bg"
         />
         <header className="relative flex justify-center text-center">
-          <h1 ref={heroRef} className="font-bold text-4xl sm:text-6xl md:text-7xl text-metallic">
+          <h1
+            ref={heroRef}
+            className="font-bold text-4xl sm:text-6xl md:text-7xl text-metallic"
+          >
             EXCOM <br />
-            <strong className="text-accent font-sarina font-normal">{year}</strong>
+            <strong className="text-accent font-sarina font-normal">
+              {year}
+            </strong>
           </h1>
         </header>
 
