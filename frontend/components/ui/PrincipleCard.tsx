@@ -16,7 +16,7 @@ export default function Card({
   return (
     <div
       className="
-        relative w-[17rem] h-[23rem]
+        relative w-[17rem] h-[25rem]
         rounded-2xl
         border border-white/30
         backdrop-blur-sm
@@ -43,9 +43,9 @@ export default function Card({
         "
       />
 
-      <div className="relative px-5">
+      <div className="relative px-8">
         {/* Letter */}
-        <p className="font-bold text-[12rem] leading-none mb-[-1rem]">
+        <p className="font-bold text-[10rem] leading-none mb-[-1rem]">
           <span className="bg-gradient-to-b from-white via-yellow-300 via-50% to-white transition-all duration-250 ease-in-out hover:glow-lg hover:glow-yellow-300 bg-clip-text text-transparent drop-shadow-lg">
             {letter}
           </span>
@@ -53,7 +53,7 @@ export default function Card({
 
         {/* Text content */}
         <div className="space-y-3 pt-2">
-          <p className="text-teal-600 font-semibold text-2xl tracking-wide">
+          <p className="text-teal-600 font-semibold text-xl tracking-wide">
             {title?.toUpperCase()}
           </p>
           <p className="text-black text-sm leading-relaxed">
