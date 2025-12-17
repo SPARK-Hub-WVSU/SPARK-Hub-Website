@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sarina: ['Sarina', 'cursive'],
+      },
       colors: {
         primary: {
           DEFAULT: "var(--primary)", // text-primary
@@ -14,6 +17,7 @@ module.exports = {
           dark: "var(--primary-dark)",
         },
         accent: "var(--accent)",
+        metallic: "var(--accent-metallic)",
       },
     },
   },
