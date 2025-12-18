@@ -3,7 +3,7 @@ import Contact_Info from "@/components/sections/Contact_Info";
 
 export default function Contact() {
   return (
-    <section className="flex flex-col gap-20">
+    <section className="flex flex-col gap-20 lg:px-32 px-9">
       <h1 className="lg:text-6xl md:text-5xl text-4xl text-center gap-3 ">
         <span className="text-[#152731] font-medium "> Go ahead and </span>
         <span className="font-bold bg-gradient-to-r from-[#152731] to-[#0AAB80] bg-clip-text text-transparent">
@@ -22,7 +22,7 @@ export default function Contact() {
         allowFullScreen={true}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        className="flex mx-auto rounded-3xl mb-32"
+        className="flex mx-auto rounded-3xl mb-32 max-w-[1175px] w-full "
       />
     </section>
   );

@@ -21,9 +21,9 @@ const designVariations: Record<Variant, FormConfig> = {
       "text-white lg:text-xl lg:text-base text-opacity-80 pb-6 font-medium",
     layout: "flex flex-col gap-5 lg:gap-5",
     input:
-      "focus:text-white text-white focus:outline-none border border-white border-opacity-60 rounded-xl h-15 p-3 text-xl lg:text-base bg-transparent font-medium w-full",
+      "focus:text-white text-white focus:outline-none border border-white border-opacity-60 md:rounded-xl rounded-lg h-15 p-3 md:text-xl text-sm lg:text-base bg-transparent font-medium w-full",
     message:
-      "resize-none border border-white border-opacity-60 rounded-xl p-3 text-xl lg:text-base bg-transparent font-medium w-full text-white focus:outline-none",
+      "resize-none border border-white border-opacity-60 rounded-xl p-3  lg:text-xl text-sm bg-transparent font-medium w-full text-white focus:outline-none",
   },
   footer: {
     bg: "mb-12 bg-[url('/bg/footer_forms_gradient.webp')] bg-cover bg-center bg-no-repeat rounded-[2rem]",
@@ -35,7 +35,7 @@ const designVariations: Record<Variant, FormConfig> = {
     input:
       "focus:text-white text-white focus:outline-none border border-white border-opacity-60 rounded-xl h-15 p-3 text-xl lg:text-base bg-transparent font-medium w-full lg:w-64",
     message:
-      "resize-none border border-white border-opacity-60 rounded-xl lg:h-full p-3 text-xl lg:text-base bg-transparent font-medium w-full lg:w-72text-white focus:outline-none",
+      "resize-none border border-white border-opacity-60 rounded-xl lg:h-full p-3 lg:text-xl text-sm bg-transparent font-medium w-full lg:w-72text-white focus:outline-none",
   },
 };
 
@@ -49,7 +49,7 @@ export default function Forms({ variant = "default" }: FormsProps) {
     <form className={styles.bg}>
       <div
         id="Blur"
-        className="backdrop-blur-[90px] px-8 lg:px-4 py-6 border border-white border-opacity-80 rounded-[2rem]"
+        className="backdrop-blur-[90px] px-4 py-5 border border-white border-opacity-80 rounded-[2rem]"
       >
         <div id="Prompt">
           <p className={styles.prompt}>Send a Message!</p>
@@ -62,7 +62,7 @@ export default function Forms({ variant = "default" }: FormsProps) {
             <div id="Name" className="flex flex-col gap-2">
               <label
                 htmlFor="name"
-                className="text-accent lg:text-2xl text-lg sm:font-medium"
+                className="text-accent lg:text-2xl md:text-lg text-sm sm:font-medium"
               >
                 Name
               </label>
@@ -78,7 +78,7 @@ export default function Forms({ variant = "default" }: FormsProps) {
             <div id="Email" className="flex flex-col gap-2">
               <label
                 htmlFor="email"
-                className="text-accent lg:text-2xl text-lg sm:font-medium"
+                className="text-accent lg:text-2xl md:text-lg text-sm  sm:font-medium"
               >
                 Email
               </label>
@@ -95,7 +95,7 @@ export default function Forms({ variant = "default" }: FormsProps) {
           <div id="Message" className="flex flex-col gap-2 w-full lg:w-auto">
             <label
               htmlFor="message"
-              className="text-accent lg:text-2xl text-lg sm:font-medium"
+              className="text-accent lg:text-2xl md:text-lg text-sm  sm:font-medium"
             >
               Message
             </label>

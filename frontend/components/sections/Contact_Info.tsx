@@ -15,9 +15,9 @@ export default function Contact_Info() {
   return (
     <section
       id="Contact_Info"
-      className="grid grid-cols-2 gap-24 max-w-[1175px] mx-auto"
+      className="lg:grid lg:grid-cols-2 flex flex-col lg:gap-24 gap-12 max-w-[1175px] lg:mx-auto"
     >
-      <div className="flex flex-col lg:gap-10">
+      <div className="flex flex-col lg:gap-10 gap-5">
         {/* Address */}
         <div className="flex gap-5">
           <AcademicCapIcon
