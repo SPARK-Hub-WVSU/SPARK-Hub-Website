@@ -9,7 +9,7 @@ import { ClipboardIcon } from "@heroicons/react/24/outline";
 
 import ReactClipboard from "react-clipboardjs-copy";
 
-import Forms from "@/components/ui/Contact_Form";
+import Forms from "@/components/ui/ContactForm";
 
 export default function Contact_Info() {
   return (
