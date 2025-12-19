@@ -69,7 +69,7 @@ export default function Contact_Info() {
           <div className="flex flex-col">
             <h3 className="lg:text-xl md:text-lg text-base text-[var(--accent-metallic)] lg:leading-relaxed leading-snug">
               <span className="font-bold bg-gradient-to-r from-[var(--accent-metallic)] to-primary-light bg-clip-text text-transparent">
-                Office Hours
+                Contact No.
               </span>
               <br></br>
               <span className="font-medium">
