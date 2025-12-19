@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Forms from "@/components/ui/Footer_Forms";
+import Forms from "@/components/ui/ContactForm";
 
 export default function Footer() {
   return (
@@ -150,7 +150,7 @@ export default function Footer() {
           </p>
         </div>
         <div className="w-full lg:w-auto">
-          <Forms />
+          <Forms variant="footer" />
         </div>
       </section>
 
