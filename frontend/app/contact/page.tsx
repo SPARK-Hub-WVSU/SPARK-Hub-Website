@@ -5,8 +5,8 @@ export default function Contact() {
   return (
     <section className="flex flex-col gap-20 lg:px-32 px-9">
       <h1 className="lg:text-6xl md:text-5xl text-4xl text-center gap-3 ">
-        <span className="text-[#152731] font-medium "> Go ahead and </span>
-        <span className="font-bold bg-gradient-to-r from-[#152731] to-[#0AAB80] bg-clip-text text-transparent">
+        <span className="text-accent-metallic font-medium ">Go ahead and </span>
+        <span className="font-bold bg-gradient-to-r from-[var(--accent-metallic)] to-primary-light bg-clip-text text-transparent">
           Connect With Us!
         </span>
       </h1>

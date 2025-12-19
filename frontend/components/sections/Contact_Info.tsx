@@ -23,12 +23,12 @@ export default function Contact_Info() {
           <AcademicCapIcon
             width={28}
             height={24}
-            color="#152731"
+            color="var(--accent-metallic)"
             className="mt-[.250rem]"
           />
           <div className="flex flex-col">
-            <h3 className="lg:text-xl md:text-lg text-base text-[#152731] lg:leading-relaxed leading-snug">
-              <span className="font-bold bg-gradient-to-r from-[#152731] to-[#0AAB80] bg-clip-text text-transparent">
+            <h3 className="lg:text-xl md:text-lg text-base text-accent-metallic lg:leading-relaxed leading-snug">
+              <span className="font-bold bg-gradient-to-r from-[var(--accent-metallic)] to-primary-light bg-clip-text text-transparent">
                 West Visayas State University - Main Campus
               </span>
               <br></br>
@@ -42,12 +42,12 @@ export default function Contact_Info() {
           <ClockIcon
             width={28}
             height={24}
-            color="#152731"
+            color="var(--accent-metallic)"
             className="mt-[.250rem]"
           />
           <div className="flex flex-col">
-            <h3 className="lg:text-xl md:text-lg text-base text-[#152731] lg:leading-relaxed leading-snug">
-              <span className="font-bold bg-gradient-to-r from-[#152731] to-[#0AAB80] bg-clip-text text-transparent">
+            <h3 className="lg:text-xl md:text-lg text-base text-[var(--accent-metallic)] lg:leading-relaxed leading-snug">
+              <span className="font-bold bg-gradient-to-r from-[var(--accent-metallic)] to-primary-light bg-clip-text text-transparent">
                 Office Hours
               </span>
               <br></br>
@@ -63,12 +63,12 @@ export default function Contact_Info() {
           <PhoneIcon
             width={28}
             height={24}
-            color="#152731"
+            color="var(--accent-metallic)"
             className="mt-[.250rem]"
           />
           <div className="flex flex-col">
-            <h3 className="lg:text-xl md:text-lg text-base text-[#152731] lg:leading-relaxed leading-snug">
-              <span className="font-bold bg-gradient-to-r from-[#152731] to-[#0AAB80] bg-clip-text text-transparent">
+            <h3 className="lg:text-xl md:text-lg text-base text-[var(--accent-metallic)] lg:leading-relaxed leading-snug">
+              <span className="font-bold bg-gradient-to-r from-[var(--accent-metallic)] to-primary-light bg-clip-text text-transparent">
                 Office Hours
               </span>
               <br></br>
@@ -88,7 +88,7 @@ export default function Contact_Info() {
                     <ClipboardIcon
                       width={16}
                       height={16}
-                      color="#152731"
+                      color="var(--accent-metallic)"
                       className="opacity-60"
                     />
                   </button>
@@ -108,7 +108,7 @@ export default function Contact_Info() {
                     <ClipboardIcon
                       width={16}
                       height={16}
-                      color="#152731"
+                      color="var(--accent-matallic)"
                       className="opacity-60"
                     />
                   </button>
@@ -123,12 +123,12 @@ export default function Contact_Info() {
           <EnvelopeIcon
             width={28}
             height={24}
-            color="#152731"
+            color="var(--accent-metallic)"
             className="mt-[.250rem]"
           />
           <div className="flex flex-col">
-            <h3 className="lg:text-xl md:text-lg text-base text-[#152731] lg:leading-relaxed leading-snug">
-              <span className="font-bold bg-gradient-to-r from-[#152731] to-[#0AAB80] bg-clip-text text-transparent">
+            <h3 className="lg:text-xl md:text-lg text-base text-[var(--accent-metallic)] lg:leading-relaxed leading-snug">
+              <span className="font-bold bg-gradient-to-r from-[var(--accent-metallic)] to-primary-light bg-clip-text text-transparent">
                 Email Address
               </span>
               <br></br>
@@ -147,7 +147,7 @@ export default function Contact_Info() {
                   <ClipboardIcon
                     width={16}
                     height={16}
-                    color="#152731"
+                    color="var(--accent-metallic)"
                     className="opacity-60"
                   />
                 </button>
