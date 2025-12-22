@@ -120,7 +120,7 @@ export default function About() {
           })}
         </div>
         {/* INITIATIVES LABEL */}
-        <div className="min-w-fit h-fit md:text-5xl text-3xl text-end flex flex-col">
+        <div className="min-w-fit h-fit mb-7 md:text-5xl text-3xl text-end flex flex-col">
           <h2>
             SPARK Hub&apos;s <br />
             <i className="text-accent">
