@@ -35,9 +35,9 @@ export default function About() {
         </div>
       </section>
       <section className="bg-white bg-[url('/bg/about-middle-bg.webp')] bg-contain md:bg-cover bg-top bg-no-repeat min-h-screen px-3">
-        <h1 className="flex text-center justify-center md:py-20 md:text-8xl py-12 text-4xl px-4 font-bold text-metallic">
+        <h2 className="flex text-center justify-center md:py-20 md:text-8xl py-12 text-4xl px-4 font-bold text-metallic">
           PRINCIPLES
-        </h1>
+        </h2>
         <div className="py-5 flex lg:flex-row flex-col items-center justify-center -space-x-3">
           {/* S - High */}
           <div className="flex lg:mt-0 mt-5">
