@@ -12,8 +12,14 @@ export default function About() {
     <>
       <section className="bg-primary-dark bg-[url('/bg/officers_bg.webp')] bg-cover bg-center bg-no-repeat sm:min-h-screen lg:-mt-30 -mt-40 px-3">
         <div className="flex flex-col gap-y-20 justify-center text-center py-24 sm:py-52 md:py-72">
-          <h1 className="font-bold justify-center text-center text-5xl md:text-8xl gap-x-2 md:gap-x-5 md:mt-0 mt-16 flex flex-row">
-            <span className="text-white flex flex-row justify-center items-center">
+          <h1
+            aria-label="About Us"
+            className="font-bold justify-center text-center text-5xl md:text-8xl gap-x-2 md:gap-x-5 md:mt-0 mt-16 flex flex-row"
+          >
+            <span
+              aria-hidden="true"
+              className="text-white flex flex-row justify-center items-center"
+            >
               AB
               <div className="relative size-16 md:size-32 transition-all duration-250 ease-in-out hover:glow-md hover:glow-white">
                 <Image
@@ -25,7 +31,10 @@ export default function About() {
               </div>
               UT
             </span>
-            <span className="text-accent flex flex-row justify-center items-center">
+            <span
+              aria-hidden="true"
+              className="text-accent flex flex-row justify-center items-center"
+            >
               US
             </span>
           </h1>
