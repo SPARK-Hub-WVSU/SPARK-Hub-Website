@@ -178,16 +178,18 @@ export default function About() {
         </div>
 
         {/* FOUNDERS GRID */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-x-36 justify-items-center items-center md:w-full w-10/12 min-h-[12rem] md:h-36 p-6 md:p-0 bg-[#378394]/50 md:rounded-none rounded-2xl">
-          {foundingTeam.map((member) => (
-            <Founding
-              key={member.name}
-              name={member.name}
-              imageSrc={member.imageSrc}
-              onClick={() => setActiveFounder(member)}
-            />
+        <ul className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-x-36 justify-items-center items-center md:w-full w-10/12 min-h-[12rem] md:h-36 p-6 md:p-0 bg-[#378394]/50 md:rounded-none rounded-2xl">
+          {foundingTeam.map((member, key) => (
+            <li key={key}>
+              <Founding
+                key={member.name}
+                name={member.name}
+                imageSrc={member.imageSrc}
+                onClick={() => setActiveFounder(member)}
+              />
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
     </>
   );
