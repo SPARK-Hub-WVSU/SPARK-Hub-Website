@@ -10,7 +10,7 @@ export default function About() {
   const [activeFounder, setActiveFounder] = useState(foundingTeam[0]);
   return (
     <>
-      <section className="bg-primary-dark bg-[url('/bg/officers_bg.webp')] bg-cover bg-center bg-no-repeat sm:min-h-screen lg:-mt-30 -mt-40 px-3">
+      <main className="bg-primary-dark bg-[url('/bg/officers_bg.webp')] bg-cover bg-center bg-no-repeat sm:min-h-screen lg:-mt-30 -mt-40 px-3">
         <div className="flex flex-col gap-y-20 justify-center text-center py-24 sm:py-52 md:py-72">
           <h1
             aria-label="About Us"
@@ -42,7 +42,7 @@ export default function About() {
             <em>SPARK Hub is the technopreneurship center at WVSU.</em>
           </p>
         </div>
-      </section>
+      </main>
       <section className="bg-white bg-[url('/bg/about-middle-bg.webp')] bg-contain md:bg-cover bg-top bg-no-repeat min-h-screen px-3">
         <h2 className="flex text-center justify-center md:py-20 md:text-8xl py-12 text-4xl px-4 font-bold text-metallic">
           PRINCIPLES
