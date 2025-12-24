@@ -47,52 +47,52 @@ export default function About() {
         <h2 className="flex text-center justify-center md:py-20 md:text-8xl py-12 text-4xl px-4 font-bold text-metallic">
           PRINCIPLES
         </h2>
-        <div className="py-5 flex lg:flex-row flex-col items-center justify-center -space-x-3">
+        <ul className="py-5 flex lg:flex-row flex-col items-center justify-center -space-x-3">
           {/* S - High */}
-          <div className="flex lg:mt-0 mt-5">
+          <li className="flex lg:mt-0 mt-5">
             <PrincipleCard
               letter="S"
               title="STUDENT CENTRICITY"
               description="Putting students first in technology, innovation, and entrepreneurship."
             />
-          </div>
+          </li>
 
           {/* P - Low (Pushed down via wrapper) */}
-          <div className="lg:mt-48 mt-5 z-10">
+          <li className="lg:mt-48 mt-5 z-10">
             <PrincipleCard
               letter="P"
               title="PASSION FOR INNOVATION"
               description="Embracing creativity and breakthrough solutions for societal progress."
             />
-          </div>
+          </li>
 
           {/* A - High */}
-          <div className="flex lg:mt-0 mt-5">
+          <li className="flex lg:mt-0 mt-5">
             <PrincipleCard
               letter="A"
               title="ADVANCEMENT THROUGH COLLABORATION"
               description="Achieving greater impact through inclusive teamwork and partnerships."
             />
-          </div>
+          </li>
 
           {/* R - Low (Pushed down via wrapper) */}
-          <div className="lg:mt-48 mt-5 z-10">
+          <li className="lg:mt-48 mt-5 z-10">
             <PrincipleCard
               letter="R"
               title="RESILIENCE AND ADAPTABILITY"
               description="Embracing change, overcoming obstacles, and continuous growth."
             />
-          </div>
+          </li>
 
           {/* K - High */}
-          <div className="flex md:mt-0 mt-5">
+          <li className="flex md:mt-0 mt-5">
             <PrincipleCard
               letter="K"
               title="KNOWLEDGE & SKILL DEVELOPMENT"
               description="Fostering continuous learning for technical expertise and entrepreneurial mindset."
             />
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section className="flex md:flex-row flex-col-reverse md:gap-x-5 gap-x-0 sm:gap-y-5 min-h-screen md:px-8 px-3 py-10 justify-between">
         <div className="h-full  w-full flex flex-col gap-y-3">
