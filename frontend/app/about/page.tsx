@@ -39,7 +39,7 @@ export default function About() {
             </span>
           </h1>
           <p className="text-white font-bold md:text-xl sm:text-xs text-md">
-            <i>SPARK Hub is the technopreneurship center at WVSU.</i>
+            <em>SPARK Hub is the technopreneurship center at WVSU.</em>
           </p>
         </div>
       </section>
@@ -136,9 +136,9 @@ export default function About() {
         <div className="min-w-fit h-fit mb-7 md:text-5xl text-3xl text-end flex flex-col">
           <h2>
             SPARK Hub&apos;s <br />
-            <i className="text-accent">
+            <em className="text-accent">
               <strong>INITIATIVES</strong>
-            </i>
+            </em>
           </h2>
           <hr className="my-5 w-36 h-1 bg-accent border-0 ms-auto" />
           <small className="text-end text-xl">
