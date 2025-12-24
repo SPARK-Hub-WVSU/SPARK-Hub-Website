@@ -95,11 +95,11 @@ export default function About() {
         </ul>
       </section>
       <section className="flex md:flex-row flex-col-reverse md:gap-x-5 gap-x-0 sm:gap-y-5 min-h-screen md:px-8 px-3 py-10 justify-between">
-        <div className="h-full  w-full flex flex-col gap-y-3">
+        <ul className="h-full  w-full flex flex-col gap-y-3">
           {initiatives.map((item, i) => {
             const isEven = i % 2 === 0;
             return (
-              <div
+              <li
                 key={item.title}
                 className={`
               ${isEven ? "md:ml-9 md:justify-start" : "md:mr-9 md:justify-end"}
@@ -128,10 +128,10 @@ export default function About() {
                     imagePath={item.image}
                   />
                 )}
-              </div>
+              </li>
             );
           })}
-        </div>
+        </ul>
         {/* INITIATIVES LABEL */}
         <div className="min-w-fit h-fit mb-7 md:text-5xl text-3xl text-end flex flex-col">
           <h2>
