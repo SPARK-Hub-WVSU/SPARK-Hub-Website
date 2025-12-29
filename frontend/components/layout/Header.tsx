@@ -72,7 +72,7 @@ export default function Header() {
           </Link>
           <Link
             id="Contact"
-            href=""
+            href="/contact"
             className="transform transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-105"
           >
             <button className={`bg-opacity-5 backdrop-blur-3xl w-auto px-3 py-2 md:px-5 md:py-3 lg:px-7 lg:py-5 flex flex-row items-center gap-2 lg:gap-3 border rounded-2xl lg:rounded-3xl text-sm md:text-base lg:text-xl
@@ -136,7 +136,7 @@ export default function Header() {
               Officers
             </Link>
             <Link
-              href="/officers"
+              href="/contact"
               className="block text-black hover:text-accent transition-colors duration-300 text-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
