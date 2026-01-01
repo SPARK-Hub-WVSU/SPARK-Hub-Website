@@ -22,8 +22,12 @@ export default function Header() {
             href="/"
             className="font-semibold text-xl sm:text-2xl md:text-2xl lg:text-3xl flex items-center gap-4 sm:gap-6 md:gap-8 relative"
           >
-            <div className={`
-              ${isDarkHeader ? " bg-gradient-to-b from-black via-teal-950 to-cyan-700 rounded-lg" : ""}`}>
+            <div
+              className={` ${isDarkHeader
+                  ? "bg-gradient-to-b from-black via-teal-950 to-cyan-700 rounded-xl overflow-hidden"
+                  : ""
+                }`}
+            >
               <Image
                 src={
                   isDarkHeader
@@ -34,7 +38,7 @@ export default function Header() {
                 width={45}
                 height={45}
                 priority
-                className="pt-3 px-1 w-9 h-9 sm:w-12 sm:h-12 xl:w-16 xl:h-16"
+                className="pt-2 px-1 w-9 h-9 sm:w-12 sm:h-12 xl:w-16 xl:h-16"
               />
             </div>
 
@@ -100,7 +104,11 @@ export default function Header() {
           ) : (
             // <Bars3Icon className="h-6 w-6" />
             <Image
-              src="/icons/hamburger.svg"
+              src={
+                isDarkHeader
+                  ? "/icons/dark-hamburger.svg"
+                  : "/icons/hamburger.svg"
+              }
               width={42}
               height={42}
               alt="hamburger icon"
