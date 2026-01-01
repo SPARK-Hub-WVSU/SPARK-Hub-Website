@@ -98,7 +98,7 @@ const Page = () => {
       {/* Header */}
       <section className="pt-20 flex flex-col items-center text-center">
         <div className="pb-12">
-          <h1 className="font-medium text-3xl sm:text-6xl text-[#152731]">
+          <h1 className="font-medium text-3xl sm:text-4xl md:text-6xl text-[#152731]">
             See the Latest News on{" "}
             <strong className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#152731] to-[#0AAB80]">
               SPARK HUB
@@ -124,7 +124,7 @@ const Page = () => {
 
           <input
             type="text"
-            className="rounded-full bg-[#378394]/35 w-full h-[min(3.8rem,12vw)] text-metallic pl-14 sm:pl-16 font-medium text-sm sm:text-xl focus:outline-none placeholder-metallic"
+            className="w-full rounded-full bg-[#378394]/35 text-metallic font-medium pl-14 sm:pl-16 py-2 sm:py-3 lg:py-4 text-sm sm:text-lg lg:text-xl focus:outline-none placeholder-metallic"
             placeholder="Search..."
           />
         </div>
@@ -177,8 +177,8 @@ const Page = () => {
                     <span
                       key={tag}
                       className={`px-2 py-1 rounded-lg font-medium text-xs sm:text-sm ${isActive
-                          ? "bg-gradient-to-r from-[#152731] to-[#0AAB80] text-white"
-                          : "bg-gray-400 text-gray-700"
+                        ? "bg-gradient-to-r from-[#152731] to-[#0AAB80] text-white"
+                        : "bg-gray-400 text-gray-700"
                         }`}
                     >
                       {tag}
