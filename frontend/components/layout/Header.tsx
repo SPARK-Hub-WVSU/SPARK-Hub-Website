@@ -10,8 +10,7 @@ export default function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const isDarkHeader = pathname.startsWith("/events")
-    // || pathname.startsWith('/') add renz route page here
+  const isDarkHeader = pathname.startsWith("/events") || pathname.startsWith("/contact")
     ;
   return (
     <header className="bg-transparent relative z-10">
