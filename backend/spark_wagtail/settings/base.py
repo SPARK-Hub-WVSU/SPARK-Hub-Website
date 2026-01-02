@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django.contrib.postgres",
+    "news",
+    "wagtail.api.v2"
 ]
 
 MIDDLEWARE = [
