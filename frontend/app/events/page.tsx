@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 import Tag from "./Tag";
 import { ARTICLES } from "@/data/articles";
@@ -77,9 +77,7 @@ const Page = () => {
   // Load more articles incrementally
   const handleLoadMore = () => {
     prevVisibleRef.current = visibleCount;
-    setVisibleCount((prev) =>
-      Math.min(prev + STEP, sortedArticles.length)
-    );
+    setVisibleCount((prev) => Math.min(prev + STEP, sortedArticles.length));
   };
 
   // Show less (reset to base count)
@@ -150,7 +148,11 @@ const Page = () => {
         className="mx-6 md:mx-12 lg:mx-40 grid grid-cols-1 md:grid-cols-3 gap-6 mt-14"
       >
         {visibleArticles.map((article) => (
-          <div key={article.id} className="flex flex-col">
+          <Link
+            key={article.id}
+            href={`/events/${article.id}`}
+            className="flex flex-col"
+          >
             <div className="h-[clamp(8rem,30vh,25rem)] rounded-3xl overflow-hidden bg-gray-200">
               {article.image && (
                 <img
@@ -171,28 +173,21 @@ const Page = () => {
               </p>
 
               <div className="flex flex-wrap gap-3 pt-2 pb-2">
-                {article.tags.map((tag) => {
-                  const isActive = activeTags.has(tag);
-                  return (
-                    <span
-                      key={tag}
-                      className={`px-2 py-1 rounded-lg font-medium text-xs sm:text-sm ${isActive
-                        ? "bg-gradient-to-r from-[#152731] to-[#0AAB80] text-white"
-                        : "bg-gray-400 text-gray-700"
-                        }`}
-                    >
-                      {tag}
-                    </span>
-                  );
-                })}
+                {article.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-2 py-1 rounded-lg font-medium text-xs sm:text-sm bg-gray-400 text-gray-700"
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
-
 
               <span className="text-sm text-gray-500 font-medium">
                 {article.date}
               </span>
             </div>
-          </div>
+          </Link>
         ))}
       </section>
 
