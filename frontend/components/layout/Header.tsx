@@ -114,27 +114,55 @@ export default function Header() {
       </nav>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden bg-white shadow-xl">
-          <div className="px-4 py-7 space-y-4">
-            {[
-              { label: "Events", href: "/events" },
-              { label: "About Us", href: "/about" },
-              { label: "Officers", href: "/officers" },
-              { label: "Contact Us", href: "/contact" },
-            ].map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="block text-black hover:text-accent transition-colors text-lg"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
+      <>
+        {/* Backdrop */}
+        <div
+          className={`
+      fixed inset-0 z-40 bg-black/20 backdrop-blur-sm md:hidden
+      transition-opacity duration-300
+      ${isMobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"}
+    `}
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+
+        {/* Menu Panel */}
+        <div
+          className={`
+      fixed top-[4.5rem] left-1/2 z-50 w-[90%] max-w-sm -translate-x-1/2 md:hidden
+      transform transition-all duration-300 ease-out
+      ${
+        isMobileMenuOpen
+          ? "opacity-100 translate-y-0 scale-100"
+          : "opacity-0 -translate-y-2 scale-95 pointer-events-none"
+      }
+    `}
+        >
+          <div className="rounded-2xl bg-white shadow-2xl overflow-hidden">
+            <div className="flex flex-col divide-y">
+              {[
+                { label: "Events", href: "/events" },
+                { label: "About Us", href: "/about" },
+                { label: "Team", href: "/officers" },
+                { label: "Contact Us", href: "/contact" },
+              ].map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="
+              px-6 py-4 text-lg font-medium text-[#152731]
+              transition-all duration-200
+              hover:bg-accent/10 hover:text-accent
+              active:scale-[0.98]
+            "
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
-      )}
+      </>
     </header>
   );
 }
