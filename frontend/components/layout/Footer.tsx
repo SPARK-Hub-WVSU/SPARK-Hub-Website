@@ -54,14 +54,20 @@ export default function Footer() {
               </span>
             </Link>
             <div className="flex flex-col gap-3 lg:gap-5">
-              <Link href="" className="hover:glow-2xl hover:glow-white">
+              <Link
+                href="/#Our_Mission"
+                className="hover:glow-2xl hover:glow-white"
+              >
                 Mission
               </Link>
-              <Link href="" className="hover:glow-2xl hover:glow-white">
+              <Link
+                href="/#Our_Vision"
+                className="hover:glow-2xl hover:glow-white"
+              >
                 Vision
               </Link>
               <Link
-                href=""
+                href="/#Recents"
                 className="hover:glow-2xl hover:glow-white text-left"
               >
                 Recent <br /> News
