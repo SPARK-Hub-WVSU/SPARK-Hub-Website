@@ -99,7 +99,11 @@ export default function Forms({ variant = "default" }: FormsProps) {
             >
               Message
             </label>
-            <textarea id="message" name="message" className={styles.message} />
+            <textarea
+              id="message"
+              name="message"
+              className={`${styles.message} text-white`}
+            />
           </div>
         </div>
 
