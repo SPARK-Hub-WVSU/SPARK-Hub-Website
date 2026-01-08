@@ -77,20 +77,29 @@ export default function Footer() {
 
           {/* About */}
           <div id="About" className="flex flex-col gap-3 lg:gap-5">
-            <Link href="/">
+            <Link href="/about">
               <span className="relative z-10 inline-block group">
                 About Us
                 <span className="absolute left-0 bottom-[-0.25rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center" />
               </span>
             </Link>
             <div className="flex flex-col gap-3 lg:gap-5 ">
-              <Link href="" className="hover:glow-2xl hover:glow-white">
+              <Link
+                href="/about/#principles"
+                className="hover:glow-2xl hover:glow-white"
+              >
                 Principles
               </Link>
-              <Link href="" className="hover:glow-2xl hover:glow-white">
+              <Link
+                href="/about/#about-initiatives"
+                className="hover:glow-2xl hover:glow-white"
+              >
                 Initiatives
               </Link>
-              <Link href="" className="hover:glow-2xl hover:glow-white">
+              <Link
+                href="/about/#testimonials"
+                className="hover:glow-2xl hover:glow-white"
+              >
                 Testimonials
               </Link>
             </div>
