@@ -58,7 +58,7 @@ export default function Contact_Info() {
           </div>
         </div>
 
-        {/* Number */}
+        {/* Number
         <div className="flex gap-5">
           <PhoneIcon
             width={28}
@@ -116,7 +116,7 @@ export default function Contact_Info() {
               </span>
             </h3>
           </div>
-        </div>
+        </div> */}
 
         {/* Email */}
         <div className="flex gap-5">

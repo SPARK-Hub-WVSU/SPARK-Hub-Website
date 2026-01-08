@@ -18,15 +18,18 @@ export default function ArticlePage({ params }: PageProps) {
     <main className="mx-6 md:mx-40 max-w-full">
       {article.image && (
         <div className="w-full my-8">
-          <img
+          <Image
             src={article.image}
             alt="Image"
-            className="w-full"
-            // fill
-            // style={{ objectFit: "cover" }}
+            width={1600}
+            height={900}
+            className="w-full h-auto"
+            sizes="100vw"
+            priority
           />
         </div>
       )}
+
       <h1 className="text-2xl md:text-6xl font-bold">{article.title}</h1>
       <p className="my-2">{article.date}</p>
       <div className="flex flex-wrap gap-2 my-6">

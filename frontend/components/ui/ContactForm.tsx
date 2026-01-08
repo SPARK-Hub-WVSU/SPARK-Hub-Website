@@ -43,10 +43,42 @@ interface FormsProps {
   variant?: Variant;
 }
 
+function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  e.preventDefault();
+
+  const formData = new FormData(e.currentTarget);
+
+  const name = formData.get("name");
+  const email = formData.get("email");
+  const message = formData.get("message");
+
+  if (!name || !email || !message) {
+    alert("Please fill out all fields.");
+    return;
+  }
+
+  const subject = "Message from SPARK Hub Website";
+
+  const body = `
+Hello, my name is ${name}.
+
+My email is: ${email}
+
+${message}
+  `.trim();
+
+  const mailto = `mailto:sparkhub@example.com?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
+
+  window.location.href = mailto;
+}
+
 export default function Forms({ variant = "default" }: FormsProps) {
   const styles = designVariations[variant];
+
   return (
-    <form className={styles.bg}>
+    <form className={styles.bg} onSubmit={handleSubmit}>
       <div
         id="Blur"
         className="backdrop-blur-[90px] px-4 py-5 border border-white border-opacity-80 rounded-[2rem]"
@@ -99,7 +131,11 @@ export default function Forms({ variant = "default" }: FormsProps) {
             >
               Message
             </label>
-            <textarea id="message" name="message" className={styles.message} />
+            <textarea
+              id="message"
+              name="message"
+              className={`${styles.message} text-white`}
+            />
           </div>
         </div>
 

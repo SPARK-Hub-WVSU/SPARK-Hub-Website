@@ -1,6 +1,6 @@
-import Hero from "@/components/sections/Hero_Section";
-import Home_About from "@/components/sections/Home_About";
-import Home_Recents from "@/components/sections/Home_Recents";
+import Hero from "@/components/sections/HeroSection";
+import Home_About from "@/components/sections/HomeAbout";
+import Home_Recents from "@/components/sections/HomeRecents";
 import Image from "next/image";
 import {
   MissionCircles,
