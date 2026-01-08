@@ -65,8 +65,14 @@ const Page = () => {
       />
     ));
 
+  // Search
+  const [searchQuery, setSearchQuery] = useState("");
+  const titleFilteredArticles = ARTICLES.filter((article) =>
+    article.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   // Move matching articles to the top, keep all articles
-  const sortedArticles = [...ARTICLES].sort((a, b) => {
+  const sortedArticles = [...titleFilteredArticles].sort((a, b) => {
     const aMatch = a.tags.some((tag) => activeTags.has(tag));
     const bMatch = b.tags.some((tag) => activeTags.has(tag));
     return aMatch === bMatch ? 0 : aMatch ? -1 : 1;
@@ -122,6 +128,8 @@ const Page = () => {
 
           <input
             type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full rounded-full bg-[#378394]/35 text-metallic font-medium pl-14 sm:pl-16 py-2 sm:py-3 lg:py-4 text-sm sm:text-lg lg:text-xl focus:outline-none placeholder-metallic"
             placeholder="Search..."
           />
