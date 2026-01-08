@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useRef } from "react";
 import OfficersGrid from "@/components/ui/Officers_grid";
+import Image from "next/image";
 import { officersByYear } from "@/data/officers";
 
 export default function Officers() {
@@ -24,11 +25,15 @@ export default function Officers() {
       </section>
 
       <div className="relative min-h-screen w-full bg-white py-14">
-        <img
+        <Image
           src="/bg/excom-top_bg.webp"
-          className="absolute inset-0 w-full h-auto"
           alt="excom bg"
+          width={1920}
+          height={600}
+          className="absolute inset-0 w-full h-auto"
+          sizes="100vw"
         />
+
         <header className="relative flex justify-center text-center">
           <h1
             ref={heroRef}
@@ -43,10 +48,13 @@ export default function Officers() {
 
         <OfficersGrid cards={officersByYear[year]} />
 
-        <img
+        <Image
           src="/bg/excom-bottom_bg.webp"
-          className="absolute bottom-0 -left-16 w-full h-auto object-cover z-10"
           alt="excom bg"
+          width={1920}
+          height={600}
+          className="absolute bottom-0 -left-16 w-full h-auto object-cover z-10"
+          sizes="100vw"
         />
 
         <section className="relative justify-center flex flex-row gap-8 z-20 mt-4 font-medium text:sm sm:text-base">

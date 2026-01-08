@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import Tag from "./Tag";
 import { ARTICLES } from "@/data/articles";
 import { ArrowDown } from "lucide-react";
+import Image from "next/image";
 
 const TAGS: string[] = [
   "Competition",
@@ -161,12 +162,14 @@ const Page = () => {
             href={`/events/${article.id}`}
             className="flex flex-col"
           >
-            <div className="h-[clamp(8rem,30vh,25rem)] rounded-3xl overflow-hidden bg-gray-200">
+            <div className="relative h-[clamp(8rem,30vh,25rem)] rounded-3xl overflow-hidden bg-gray-200">
               {article.image && (
-                <img
+                <Image
                   src={article.image}
                   alt={article.title}
-                  className="h-full w-full object-cover"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               )}
             </div>
