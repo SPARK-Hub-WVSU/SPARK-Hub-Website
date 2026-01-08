@@ -92,17 +92,23 @@ export default function Footer() {
 
           {/* Contact */}
           <div id="Contact" className="flex flex-col gap-3 lg:gap-5">
-            <Link href="/">
+            <Link href="/contact">
               <span className="relative z-10 inline-block group">
                 Contacts
                 <span className="absolute left-0 bottom-[-0.25rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center" />
               </span>
             </Link>
             <div className="flex flex-col gap-3 lg:gap-5">
-              <Link href="" className="hover:glow-2xl hover:glow-white">
+              <Link
+                href="https://www.facebook.com/WVSUSparkHub"
+                className="hover:glow-2xl hover:glow-white"
+              >
                 Facebook
               </Link>
-              <Link href="" className="hover:glow-2xl hover:glow-white">
+              <Link
+                href="mailto:spark.hub@wvsu.edu.ph"
+                className="hover:glow-2xl hover:glow-white"
+              >
                 Email
               </Link>
             </div>
@@ -113,7 +119,7 @@ export default function Footer() {
             id="Team"
             className="flex flex-col gap-3 lg:gap-5 translate-x-2 lg:translate-x-0"
           >
-            <Link href="/">
+            <Link href="/officers">
               <span className="relative z-10 inline-block group">
                 Officers
                 <span className="absolute left-0 bottom-[-0.25rem] w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center" />
