@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
-import OfficersGrid from "@/components/ui/Officers_grid";
+import OfficersGrid from "@/components/ui/OfficersGrid";
 import Image from "next/image";
 import { officersByYear } from "@/data/officers";
 
