@@ -1,5 +1,5 @@
 "use client";
-import Contact_Info from "@/components/sections/Contact_Info";
+import Contact_Info from "@/components/sections/ContactInfo";
 
 export default function Contact() {
   return (
