@@ -1,7 +1,6 @@
 import {
   AcademicCapIcon,
   ClockIcon,
-  PhoneIcon,
   EnvelopeIcon,
 } from "@heroicons/react/24/solid";
 

@@ -58,10 +58,10 @@ export default function Officers() {
         />
 
         <section className="relative justify-center flex flex-row gap-8 z-20 mt-4 font-medium text:sm sm:text-base">
-          {["2025", "2024", "2023"].map((y) => (
+          {(["2025", "2024", "2023"] as const).map((y) => (
             <button
               key={y}
-              onClick={() => handleYearClick(y as any)}
+              onClick={() => handleYearClick(y)} // No type casting needed here now!
               className={`pb-1 border-b-2 ${
                 year === y ? "border-accent text-accent " : "border-transparent"
               }`}

@@ -6,9 +6,14 @@ import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
+interface PostQueryResult {
+  id: string;
+  title: string;
+}
+
 export async function generateStaticParams() {
   const posts = await client.fetch(POSTS_QUERY);
-  return posts.map((post: any) => ({
+  return posts.map((post: PostQueryResult) => ({
     slug: post.id,
   }));
 }
