@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sarina: ['Sarina', 'cursive'],
+        sarina: ["Sarina", "cursive"],
       },
       colors: {
         primary: {
@@ -22,6 +22,7 @@ module.exports = {
     },
   },
   plugins: [
-    require('tailwindcss-textglow'),
+    require("tailwindcss-textglow"),
+    require("@tailwindcss/typography"),
   ],
 };

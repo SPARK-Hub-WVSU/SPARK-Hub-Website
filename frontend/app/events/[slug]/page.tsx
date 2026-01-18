@@ -70,7 +70,7 @@ export default async function ArticlePage({ params }: PageProps) {
       {/* PortableText renders the JSON blocks from Sanity.
           We wrap it in a 'prose' div for automatic styling.
       */}
-      <article className="prose prose-sm md:prose-lg max-w-none mb-16 text-justify">
+      <article className="prose prose-slate prose-sm md:prose-lg max-w-none mb-16">
         <PortableText value={article.content} />
       </article>
     </main>
