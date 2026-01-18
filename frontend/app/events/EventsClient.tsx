@@ -4,9 +4,9 @@
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 import Tag from "./Tag";
-import { ArrowDown } from "lucide-react";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
+// import { Image } from "sanity";
 
 // Match the type from your GROQ query
 interface SanityArticle {
@@ -15,7 +15,7 @@ interface SanityArticle {
   excerpt: string;
   date: string;
   tags: string[];
-  image: any;
+  image: typeof Image;
 }
 
 const TAGS = [
@@ -60,13 +60,17 @@ export default function EventsClient({
   const toggleTag = (tag: string) => {
     setActiveTags((prev) => {
       const newSet = new Set(prev);
-      newSet.has(tag) ? newSet.delete(tag) : newSet.add(tag);
+      if (newSet.has(tag)) {
+        newSet.delete(tag);
+      } else {
+        newSet.add(tag);
+      }
       return newSet;
     });
   };
 
   const titleFilteredArticles = initialArticles.filter((article) =>
-    article.title.toLowerCase().includes(searchQuery.toLowerCase())
+    article.title.toLowerCase().includes(searchQuery.toLowerCase()),
   );
 
   const sortedArticles = [...titleFilteredArticles].sort((a, b) => {
