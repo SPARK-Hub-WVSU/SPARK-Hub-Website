@@ -31,3 +31,12 @@ export const RECENT_POST_QUERY =
   image,
   "body": content
 }`);
+
+export const INITIATIVES_QUERY =
+  defineQuery(`*[_type == "post"] | order(publishedAt desc)[0...5] {
+  "id": slug.current,
+  title,
+  excerpt,
+  image,
+  content
+}`);
