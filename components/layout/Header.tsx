@@ -11,7 +11,9 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const isDarkHeader =
-    pathname.startsWith("/events") || pathname.startsWith("/contact");
+    pathname.startsWith("/events") ||
+    pathname.startsWith("/contact") ||
+    pathname.startsWith("/studio");
 
   const textColor = isDarkHeader ? "text-metallic" : "text-white";
   const logoWrapperBg = isDarkHeader
