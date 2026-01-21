@@ -10,13 +10,13 @@
   --primary-dark: #296e7a;
   --primary-light: #1de4af;
 
-  --accent-metallic:#022A34 ;
-  --accent: #FFC700;
+  --accent-metallic: #022a34;
+  --accent: #ffc700;
 }
 
 @font-face {
-  font-family: 'Sarina';
-  src: url('/fonts/Sarina.woff2') format('woff2');
+  font-family: "Sarina";
+  src: url("/fonts/Sarina.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -37,10 +37,10 @@ body {
   .translate-sm-only {
     @apply translate-y-0;
   }
-}
 
-@media (min-width: 980px) {
-  .translate-sm-only {
-    @apply translate-y-16;
+  @media (min-width: 980px) {
+    .translate-sm-only {
+      @apply translate-y-16;
+    }
   }
 }
