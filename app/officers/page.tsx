@@ -19,7 +19,7 @@ export default function Officers() {
         <div className="flex justify-center text-center py-24 sm:py-52 md:py-72">
           <h1 className="font-bold text-4xl sm:text-6xl md:text-8xl  md:mt-0 mt-16 text-white">
             Meet the <br />
-            <strong className="text-accent">TEAM</strong>
+            <strong className="text-accent">OFFICERS</strong>
           </h1>
         </div>
       </section>
