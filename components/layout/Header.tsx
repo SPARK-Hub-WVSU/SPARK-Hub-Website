@@ -11,7 +11,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const isDarkHeader =
-    pathname.startsWith("/events") ||
+    pathname.startsWith("/news") ||
     pathname.startsWith("/contact") ||
     pathname.startsWith("/studio");
 
