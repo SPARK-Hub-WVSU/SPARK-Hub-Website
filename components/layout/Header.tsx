@@ -50,7 +50,7 @@ export default function Header() {
         <div
           className={`hidden md:flex items-center gap-4 lg:gap-10 font-medium tracking-wide ${textColor}`}
         >
-          {["News", "About Us", "Team"].map((label, i) => {
+          {["News", "About Us", "Officers"].map((label, i) => {
             const href =
               label === "News"
                 ? "/news"
@@ -144,7 +144,7 @@ export default function Header() {
               {[
                 { label: "News", href: "/news" },
                 { label: "About Us", href: "/about" },
-                { label: "Team", href: "/officers" },
+                { label: "Officers", href: "/officers" },
                 { label: "Contact Us", href: "/contact" },
               ].map((item) => (
                 <Link
