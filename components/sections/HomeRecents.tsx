@@ -35,7 +35,7 @@ export default async function Recents() {
 
         {/* Link to the dynamic slug */}
         <Link
-          href={`/events/${article.id}`}
+          href={`/news/${article.id}`}
           id="thumbnail"
           className="group flex flex-col md:gap-5 gap-4 text-[#2E2E2E] lg:max-w-[700px]"
         >
