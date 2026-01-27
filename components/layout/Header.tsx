@@ -50,10 +50,10 @@ export default function Header() {
         <div
           className={`hidden md:flex items-center gap-4 lg:gap-10 font-medium tracking-wide ${textColor}`}
         >
-          {["Events", "About Us", "Team"].map((label, i) => {
+          {["News", "About Us", "Team"].map((label, i) => {
             const href =
-              label === "Events"
-                ? "/events"
+              label === "News"
+                ? "/news"
                 : label === "About Us"
                   ? "/about"
                   : "/officers";
@@ -142,7 +142,7 @@ export default function Header() {
           <div className="rounded-2xl bg-white shadow-2xl overflow-hidden">
             <div className="flex flex-col divide-y">
               {[
-                { label: "Events", href: "/events" },
+                { label: "News", href: "/news" },
                 { label: "About Us", href: "/about" },
                 { label: "Team", href: "/officers" },
                 { label: "Contact Us", href: "/contact" },

@@ -110,7 +110,7 @@ export default async function About() {
           {initiatives.map((item: Initiative, i: number) => {
             // 'any' replaced with 'Initiative'
             const isEven = i % 2 === 0;
-            const href = `/events/${item.id}`;
+            const href = `/news/${item.id}`;
 
             return (
               <li

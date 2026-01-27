@@ -1,4 +1,4 @@
-// app/events/[slug]/page.tsx
+// app/news/[slug]/page.tsx
 import { client } from "@/sanity/lib/client";
 import { POST_BY_SLUG_QUERY, POSTS_QUERY } from "@/sanity/lib/queries";
 import { urlFor } from "@/sanity/lib/image";
