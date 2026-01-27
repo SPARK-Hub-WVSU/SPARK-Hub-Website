@@ -98,10 +98,10 @@ export default function Footer() {
                 Initiatives
               </Link>
               <Link
-                href="/about/#testimonials"
+                href="/about/#foundingTeam"
                 className="hover:glow-2xl hover:glow-white"
               >
-                Testimonials
+                Founding Members
               </Link>
             </div>
           </div>
