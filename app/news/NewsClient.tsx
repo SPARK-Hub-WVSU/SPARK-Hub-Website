@@ -1,4 +1,4 @@
-// app/events/EventsClient.tsx
+// app/news/NewsClient.tsx
 "use client";
 
 import Link from "next/link";
@@ -27,7 +27,7 @@ const TAGS = [
   "Networking",
 ];
 
-export default function EventsClient({
+export default function NewsClient({
   initialArticles,
 }: {
   initialArticles: SanityArticle[];
@@ -134,7 +134,7 @@ export default function EventsClient({
         {visibleArticles.map((article) => (
           <Link
             key={article.id}
-            href={`/events/${article.id}`}
+            href={`/news/${article.id}`}
             className="flex flex-col"
           >
             <div className="relative h-[clamp(8rem,30vh,25rem)] rounded-3xl overflow-hidden bg-gray-200">
