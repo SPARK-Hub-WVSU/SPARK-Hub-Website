@@ -37,7 +37,7 @@ export function ArticleCard({ article, href }: ArticleCardProps) {
       </article>
       <Link
         href={href}
-        className="bg-accent w-[6rem] h-[1.5rem] md:w-[13rem] md:h-[3rem] rounded-full shadow-lg text-white md:text-xl text-xs flex items-center justify-center hover:bg-opacity-90 transition-all"
+        className="hover:underline hover:drop-shadow-sm bg-accent w-[6rem] h-[1.5rem] md:w-[13rem] md:h-[3rem] rounded-full shadow-lg text-white md:text-xl text-xs flex items-center justify-center hover:bg-opacity-90 transition-all"
       >
         READ MORE
       </Link>
