@@ -14,7 +14,8 @@ const Founding = ({ name, imageSrc, onClick }: FoundingProps) => {
           src={imageSrc}
           alt={name}
           fill
-          className="object-cover object-top"
+          className="cursor-pointer object-cover object-top"
+          onClick={onClick}
         />
       </div>
 
