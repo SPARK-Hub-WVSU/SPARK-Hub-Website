@@ -132,26 +132,34 @@ export default function NewsClient({
         className="my-14 mx-6 md:mx-40 grid grid-cols-1 md:grid-cols-3 gap-6"
       >
         {visibleArticles.map((article) => (
-          <Link
-            key={article.id}
-            href={`/news/${article.id}`}
-            className="flex flex-col"
-          >
+          <div key={article.id}>
             <div className="relative h-[clamp(8rem,30vh,25rem)] rounded-3xl overflow-hidden bg-gray-200">
               {article.image && (
-                <Image
-                  src={urlFor(article.image).width(600).url()} // Best Practice: Dynamic sizing
-                  alt={article.title}
-                  fill
-                  className="object-cover"
-                />
+                <Link
+                  key={article.id}
+                  href={`/news/${article.id}`}
+                  className="flex flex-col"
+                >
+                  <Image
+                    src={urlFor(article.image).width(600).url()}
+                    alt={article.title}
+                    fill
+                    className="object-cover"
+                  />
+                </Link>
               )}
             </div>
 
             <div className="px-4 pt-3">
-              <h2 className="font-semibold text-xl text-[#2E2E2E]">
-                {article.title}
-              </h2>
+              <Link
+                key={article.id}
+                href={`/news/${article.id}`}
+                className="flex flex-col"
+              >
+                <h2 className="hover:underline font-semibold text-xl text-[#2E2E2E]">
+                  {article.title}
+                </h2>
+              </Link>
               <p className="text-[#2E2E2E] line-clamp-2">{article.excerpt}</p>
               <div className="flex flex-wrap gap-2 pt-2">
                 {article.tags?.map((tag) => (
@@ -171,7 +179,7 @@ export default function NewsClient({
                 })}
               </span>
             </div>
-          </Link>
+          </div>
         ))}
       </section>
 
