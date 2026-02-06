@@ -157,7 +157,7 @@ export default function NewsClient({
                 {article.tags?.map((tag) => (
                   <span
                     key={tag}
-                    className="px-2 py-1 rounded-lg text-xs bg-gray-200"
+                    className="px-2 py-1 rounded-lg text-xs bg-gray-100 hover:bg-gray-200"
                   >
                     {tag}
                   </span>
