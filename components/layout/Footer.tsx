@@ -1,11 +1,10 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import Forms from "@/components/ui/ContactForm";
 
 export default function Footer() {
   return (
-    <footer className="bg-[url('/bg/footer_bg.webp')] bg-cover bg-center bg-no-repeat w-full min-h-screen">
+    <footer className="bg-[url('/bg/footer_bg.webp')] bg-cover bg-center bg-no-repeat w-full h-auto">
       <nav className="text-white text-xl w-auto h-auto flex flex-col lg:flex-row justify-between py-8 lg:py-20 px-4 lg:px-36">
         {/* Logo */}
         <div
@@ -152,7 +151,7 @@ export default function Footer() {
       />
 
       {/* Contact Form */}
-      <section
+      {/* <section
         id="Connect"
         className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-0 px-4  lg:px-36"
       >
@@ -174,7 +173,7 @@ export default function Footer() {
         <div className="w-full lg:w-auto">
           <Forms variant="footer" />
         </div>
-      </section>
+      </section> */}
 
       <section
         id="Copy_Right"
