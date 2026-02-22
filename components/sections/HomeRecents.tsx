@@ -1,4 +1,3 @@
-// components/Recents.tsx (or wherever your file is)
 import Image from "next/image";
 import Link from "next/link";
 import { client } from "@/sanity/lib/client";
@@ -34,30 +33,31 @@ export default async function Recents() {
         </div>
 
         {/* Link to the dynamic slug */}
-        <Link
-          href={`/news/${article.id}`}
+        <div
+          // href={`/news/${article.id}`}
           id="thumbnail"
           className="group flex flex-col md:gap-5 gap-4 text-[#2E2E2E] lg:max-w-[700px]"
         >
           <div className="relative w-full aspect-video rounded-xl overflow-hidden">
             {article.image && (
-              <Image
-                fill
-                src={urlFor(article.image).width(800).url()}
-                alt={article.title}
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
-              />
+              <Link href={`/news/${article.id}`}>
+                <Image
+                  fill
+                  src={urlFor(article.image).width(800).url()}
+                  alt={article.title}
+                  className="object-cover hover:scale-[1.01] transition-transform duration-500"
+                />
+              </Link>
             )}
           </div>
 
           <div className="relative w-fit">
             <h2
               id="article_title"
-              className="md:text-4xl text-xl font-medium relative"
+              className="md:text-4xl text-xl font-medium relative hover:underline"
             >
-              {article.title}
+              <Link href={`/news/${article.id}`}>{article.title}</Link>
             </h2>
-            <span className="absolute left-0 bottom-[-0.40rem] w-full h-1 bg-[#2E2E2E] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center" />
           </div>
 
           <p
@@ -83,7 +83,7 @@ export default async function Recents() {
             </span>
           </p>
           <hr />
-        </Link>
+        </div>
       </div>
     </section>
   );
