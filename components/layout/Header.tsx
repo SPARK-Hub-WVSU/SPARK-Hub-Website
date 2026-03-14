@@ -13,7 +13,7 @@ export default function Header() {
   const isDarkHeader =
     pathname.startsWith("/news") ||
     pathname.startsWith("/contact") ||
-    pathname.startsWith("/studio");
+    pathname.startsWith("/studio") ;
 
   const textColor = isDarkHeader ? "text-metallic" : "text-white";
   const logoWrapperBg = isDarkHeader
