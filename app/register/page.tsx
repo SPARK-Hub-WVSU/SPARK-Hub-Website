@@ -61,7 +61,7 @@ function SelectChevron() {
 
 export default function RegisterPage() {
   const [formData, setFormData] = useState<FormData>(INITIAL_FORM);
-  const [submitted, setSubmitted] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -91,25 +91,9 @@ export default function RegisterPage() {
       body: body.toString(),
     });
 
-    setSubmitted(true);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    setShowModal(true);
   };
 
-  if (submitted) {
-    return (
-      <section className="bg-[#022A34] bg-[url('/bg/footer_bg.webp')] bg-cover bg-center bg-no-repeat min-h-screen lg:-mt-30 -mt-40 flex items-center justify-center">
-        <div className="text-center px-6 py-24 sm:py-52 md:py-72 md:mt-0 mt-16">
-          <CheckIcon className="w-12 h-12 text-accent mx-auto mb-6" strokeWidth={1.5} />
-          <h1 className="font-bold text-4xl sm:text-6xl md:text-8xl text-white mb-6">
-            Thank You!
-          </h1>
-          <p className="text-white/50 text-sm sm:text-base leading-relaxed max-w-sm mx-auto">
-            We've received your registration and will be in touch with next steps shortly.
-          </p>
-        </div>
-      </section>
-    );
-  }
 
   return (
     <>
@@ -118,7 +102,7 @@ export default function RegisterPage() {
         <div className="flex justify-center items-center text-center py-24 sm:py-52 md:py-72">
           <div>
             <h1 className="font-bold text-4xl sm:text-6xl md:text-8xl md:mt-0 mt-16 text-white">
-              Join the <br />
+              JOIN<br />
               <strong className="text-accent">SPARK HUB</strong>
             </h1>
             <p className="text-white/50 text-sm sm:text-base leading-relaxed max-w-sm mx-auto mt-6">
@@ -179,7 +163,7 @@ export default function RegisterPage() {
               <Label required>Committee</Label>
               <div className="relative">
                 <select name="department" value={formData.department} onChange={handleChange} className={selectCls}>
-                  <option value="" disabled style={{ background: "#fff" }}>Select a department</option>
+                  <option value="" disabled style={{ background: "#fff" }}>Select a Committee</option>
                   {DEPARTMENTS.map((d) => (
                     <option key={d.value} value={d.value} style={{ background: "#fff" }}>{d.label}</option>
                   ))}
@@ -212,6 +196,29 @@ export default function RegisterPage() {
           </div>
         </div>
       </div>
+
+        {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm px-6">
+            <div className="bg-white rounded-3xl p-10 max-w-md w-full text-center shadow-2xl">
+            <div className="relative w-16 h-16 mx-auto mb-6">
+                <div className="absolute inset-0 rounded-full bg-[#1de4af]/20 animate-ping" />
+                <div className="w-16 h-16 rounded-full border border-[#1de4af]/60 bg-[#1de4af]/10 flex items-center justify-center">
+                <CheckIcon className="w-8 h-8 text-[#378394]" strokeWidth={1.5} />
+                </div>
+            </div>
+            <h2 className="text-3xl font-bold text-[#022a34] mb-3">Thank You!</h2>
+            <p className="text-[#022a34]/50 text-sm leading-relaxed mb-8">
+                We've received your registration and will be in touch with next steps shortly.
+            </p>
+            <button
+                onClick={() => { window.location.href = "/"; }}
+                className="px-8 py-3 rounded-2xl bg-[#022a34] text-white text-sm font-semibold hover:bg-[#296e7a] transition-all duration-200"
+            >
+                Close
+            </button>
+            </div>
+        </div>
+        )}
     </>
   );
 }
