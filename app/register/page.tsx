@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { ArrowRightIcon, CheckIcon } from "@heroicons/react/24/outline";
 
 const DEPARTMENTS = [
@@ -12,6 +11,8 @@ const DEPARTMENTS = [
   { value: "operations", label: "Operations" },
   { value: "partnerships", label: "Partnerships" },
 ];
+
+// TODO: Add some colleges here for the suggestion func
 
 type FormData = {
   firstName: string;
@@ -68,35 +69,45 @@ export default function RegisterPage() {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = () => {
-    console.log("Submitted:", formData);
+  const isFormValid = Object.values(formData).every((v) => v.trim() !== "");
+
+  const handleSubmit = async () => {
+    if (!isFormValid) return;
+    const body = new URLSearchParams({
+      firstName:   formData.firstName,
+      lastName:    formData.lastName,
+      birthday:    formData.birthday,
+      course:      formData.course,
+      yearSection: formData.yearSection,
+      email:       formData.email,
+      department:  formData.department,
+      Created:     "x-sheetmonkey-current-date-time",
+    });
+
+    {/* ════ API FOR SHEETMONKEY (in the .env file) ════ */}
+    await fetch(process.env.NEXT_PUBLIC_SHEETMONKEY_URL!, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: body.toString(),
+    });
+
     setSubmitted(true);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   if (submitted) {
     return (
-      <div className="min-h-screen bg-white flex items-center justify-center px-6">
-        <div className="text-center max-w-sm">
-          <div className="relative w-20 h-20 mx-auto mb-8">
-            <div className="absolute inset-0 rounded-full bg-[#1de4af]/20 animate-ping" />
-            <div className="w-20 h-20 rounded-full border border-[#1de4af]/60 bg-[#1de4af]/10 flex items-center justify-center">
-              <CheckIcon className="w-9 h-9 text-[#378394]" strokeWidth={1.5} />
-            </div>
-          </div>
-          <p className="text-[#378394] text-xs tracking-widest uppercase font-semibold mb-3">
-            Registration complete
-          </p>
-          <h2 className="text-4xl font-light text-[#022a34] mb-4 tracking-tight">
-            Welcome to SPARK Hub
-          </h2>
-          <p className="text-[#022a34]/40 text-sm leading-relaxed mb-10">
+      <section className="bg-[#022A34] bg-[url('/bg/footer_bg.webp')] bg-cover bg-center bg-no-repeat min-h-screen lg:-mt-30 -mt-40 flex items-center justify-center">
+        <div className="text-center px-6 py-24 sm:py-52 md:py-72 md:mt-0 mt-16">
+          <CheckIcon className="w-12 h-12 text-accent mx-auto mb-6" strokeWidth={1.5} />
+          <h1 className="font-bold text-4xl sm:text-6xl md:text-8xl text-white mb-6">
+            Thank You!
+          </h1>
+          <p className="text-white/50 text-sm sm:text-base leading-relaxed max-w-sm mx-auto">
             We've received your registration and will be in touch with next steps shortly.
           </p>
-          <Link href="/" className="text-sm text-[#022a34]/40 hover:text-[#022a34] transition-colors">
-            ← Back to home
-          </Link>
         </div>
-      </div>
+      </section>
     );
   }
 
@@ -165,7 +176,7 @@ export default function RegisterPage() {
 
             {/* Department */}
             <div>
-              <Label required>Department</Label>
+              <Label required>Committee</Label>
               <div className="relative">
                 <select name="department" value={formData.department} onChange={handleChange} className={selectCls}>
                   <option value="" disabled style={{ background: "#fff" }}>Select a department</option>
@@ -183,9 +194,11 @@ export default function RegisterPage() {
               <button
                 type="button"
                 onClick={handleSubmit}
+                disabled={!isFormValid}
                 className="w-full sm:w-auto sm:min-w-[280px] flex items-center justify-between px-8 py-4 rounded-2xl
                   bg-[#022a34] text-white font-semibold text-sm tracking-wide
-                  hover:bg-[#296e7a] active:scale-[0.98] transition-all duration-200 group"
+                  hover:bg-[#296e7a] active:scale-[0.98] transition-all duration-200 group
+                  disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-[#022a34]"
               >
                 <span>Submit registration</span>
                 <ArrowRightIcon className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" strokeWidth={2.5} />
